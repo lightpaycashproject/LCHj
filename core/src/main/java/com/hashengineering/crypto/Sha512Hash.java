@@ -17,8 +17,8 @@
 package com.hashengineering.crypto;
 
 import com.google.common.io.ByteStreams;
-import org.colxj.core.Sha256Hash;
-import org.colxj.core.Utils;
+import org.lightpaycashj.core.Sha256Hash;
+import org.lightpaycashj.core.Utils;
 import org.spongycastle.util.encoders.Hex;
 
 import java.io.File;

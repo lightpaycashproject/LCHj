@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import com.google.common.base.Charsets;
 import com.google.common.base.Joiner;

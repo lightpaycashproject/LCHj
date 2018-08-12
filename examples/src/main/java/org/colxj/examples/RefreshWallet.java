@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
-import org.colxj.core.*;
-import org.colxj.params.TestNet3Params;
-import org.colxj.store.BlockStore;
-import org.colxj.store.MemoryBlockStore;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.MemoryBlockStore;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import java.io.File;
 

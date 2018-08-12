@@ -25,7 +25,7 @@
 
 package wallet;
 
-option java_package = "org.colxj.wallet";
+option java_package = "org.lightpaycashj.wallet";
 option java_outer_classname = "Protos";
 
 message PeerAddress {

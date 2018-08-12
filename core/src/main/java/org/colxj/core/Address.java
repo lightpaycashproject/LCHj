@@ -16,14 +16,14 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import org.colxj.params.Networks;
-import org.colxj.script.Script;
+import org.lightpaycashj.params.Networks;
+import org.lightpaycashj.script.Script;
 
 import javax.annotation.Nullable;
 

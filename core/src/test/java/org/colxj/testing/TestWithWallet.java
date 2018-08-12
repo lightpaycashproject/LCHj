@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.colxj.testing;
+package org.lightpaycashj.testing;
 
-import org.colxj.core.*;
-import org.colxj.params.UnitTestParams;
-import org.colxj.store.BlockStore;
-import org.colxj.store.MemoryBlockStore;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.params.UnitTestParams;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.MemoryBlockStore;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.wallet.Wallet;
 
 import javax.annotation.Nullable;
 
-import static org.colxj.testing.FakeTxBuilder.createFakeBlock;
-import static org.colxj.testing.FakeTxBuilder.createFakeTx;
+import static org.lightpaycashj.testing.FakeTxBuilder.createFakeBlock;
+import static org.lightpaycashj.testing.FakeTxBuilder.createFakeTx;
 
 // TODO: This needs to be somewhat rewritten - the "sendMoneyToWallet" methods aren't sending via the block chain object
 

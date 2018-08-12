@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.core.Coin;
-import org.colxj.core.ECKey;
-import org.colxj.core.ECKey.ECDSASignature;
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.Transaction;
-import org.colxj.core.TransactionConfidence;
-import org.colxj.core.TransactionInput;
-import org.colxj.core.TransactionOutput;
-import org.colxj.crypto.TransactionSignature;
-import org.colxj.script.ScriptChunk;
+import org.lightpaycashj.core.Coin;
+import org.lightpaycashj.core.ECKey;
+import org.lightpaycashj.core.ECKey.ECDSASignature;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.Transaction;
+import org.lightpaycashj.core.TransactionConfidence;
+import org.lightpaycashj.core.TransactionInput;
+import org.lightpaycashj.core.TransactionOutput;
+import org.lightpaycashj.crypto.TransactionSignature;
+import org.lightpaycashj.script.ScriptChunk;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -114,7 +114,7 @@ public class DefaultRiskAnalysis implements RiskAnalysis {
 
     /**
      * The reason a transaction is considered non-standard, returned by
-     * {@link #isStandard(org.colxj.core.Transaction)}.
+     * {@link #isStandard(org.lightpaycashj.core.Transaction)}.
      */
     public enum RuleViolation {
         NONE,

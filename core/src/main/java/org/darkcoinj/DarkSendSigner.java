@@ -1,10 +1,10 @@
 package org.darkcoinj;
 
 import com.google.common.base.Charsets;
-import org.colxj.core.*;
-import org.colxj.crypto.KeyCrypterException;
-import org.colxj.script.Script;
-import org.colxj.script.ScriptBuilder;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.crypto.KeyCrypterException;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.script.ScriptBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.util.encoders.Base64;

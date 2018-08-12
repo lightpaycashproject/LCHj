@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.colxj.params;
+package org.lightpaycashj.params;
 
 import java.math.BigInteger;
 import java.util.concurrent.TimeUnit;
 
-import org.colxj.core.*;
-import org.colxj.utils.MonetaryFormat;
-import org.colxj.store.BlockStore;
-import org.colxj.store.BlockStoreException;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.utils.MonetaryFormat;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.BlockStoreException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

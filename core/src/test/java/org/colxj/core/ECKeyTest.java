@@ -15,25 +15,25 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.core.ECKey.ECDSASignature;
-import org.colxj.crypto.EncryptedData;
-import org.colxj.crypto.KeyCrypter;
-import org.colxj.crypto.KeyCrypterScrypt;
-import org.colxj.crypto.TransactionSignature;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.TestNet3Params;
-import org.colxj.params.UnitTestParams;
-import org.colxj.utils.BriefLogFormatter;
+import org.lightpaycashj.core.ECKey.ECDSASignature;
+import org.lightpaycashj.crypto.EncryptedData;
+import org.lightpaycashj.crypto.KeyCrypter;
+import org.lightpaycashj.crypto.KeyCrypterScrypt;
+import org.lightpaycashj.crypto.TransactionSignature;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.params.UnitTestParams;
+import org.lightpaycashj.utils.BriefLogFormatter;
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.ListeningExecutorService;
 import com.google.common.util.concurrent.MoreExecutors;
 import com.google.protobuf.ByteString;
-import org.colxj.wallet.Protos;
-import org.colxj.wallet.Protos.ScryptParameters;
+import org.lightpaycashj.wallet.Protos;
+import org.lightpaycashj.wallet.Protos.ScryptParameters;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -50,8 +50,8 @@ import java.util.Random;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executors;
 
-import static org.colxj.core.Utils.HEX;
-import static org.colxj.core.Utils.reverseBytes;
+import static org.lightpaycashj.core.Utils.HEX;
+import static org.lightpaycashj.core.Utils.reverseBytes;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static org.junit.Assert.*;
 

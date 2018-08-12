@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.signers;
+package org.lightpaycashj.signers;
 
 /**
  * A signer that doesn't have any state to be serialized.

@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.params.MainNetParams;
-import org.colxj.params.UnitTestParams;
-import org.colxj.store.BlockStore;
-import org.colxj.store.MemoryBlockStore;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.UnitTestParams;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.MemoryBlockStore;
+import org.lightpaycashj.wallet.Wallet;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -29,10 +29,10 @@ import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
-import static org.colxj.core.Coin.*;
-import static org.colxj.core.Utils.HEX;
-import static org.colxj.testing.FakeTxBuilder.createFakeBlock;
-import static org.colxj.testing.FakeTxBuilder.createFakeTx;
+import static org.lightpaycashj.core.Coin.*;
+import static org.lightpaycashj.core.Utils.HEX;
+import static org.lightpaycashj.testing.FakeTxBuilder.createFakeBlock;
+import static org.lightpaycashj.testing.FakeTxBuilder.createFakeTx;
 import static org.junit.Assert.*;
 
 public class ParseByteCacheTest {

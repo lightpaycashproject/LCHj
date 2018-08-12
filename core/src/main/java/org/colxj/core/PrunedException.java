@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 // TODO: Rename PrunedException to something like RequiredDataWasPrunedException
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
 import static org.junit.Assert.assertEquals;
 
@@ -24,7 +24,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 import org.junit.Test;
-import org.colxj.core.Coin;
+import org.lightpaycashj.core.Coin;
 
 public class ExchangeRateTest {
 

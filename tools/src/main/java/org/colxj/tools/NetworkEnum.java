@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.tools;
+package org.lightpaycashj.tools;
 
 public enum NetworkEnum {
     MAIN,

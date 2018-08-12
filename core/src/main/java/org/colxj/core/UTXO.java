@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.script.*;
+import org.lightpaycashj.script.*;
 import com.google.common.base.Objects;
 
 import java.io.*;

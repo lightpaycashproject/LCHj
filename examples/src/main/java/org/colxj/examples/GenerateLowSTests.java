@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -24,24 +24,24 @@ import java.util.EnumSet;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-import org.colxj.core.Coin;
-import org.colxj.core.ECKey;
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.ScriptException;
-import org.colxj.core.Transaction;
-import org.colxj.core.TransactionInput;
-import org.colxj.core.TransactionOutput;
-import org.colxj.core.Utils;
-import org.colxj.crypto.TransactionSignature;
-import org.colxj.params.MainNetParams;
-import org.colxj.script.Script;
-import org.colxj.script.ScriptBuilder;
-import org.colxj.script.ScriptChunk;
-import static org.colxj.script.ScriptOpCodes.getOpCodeName;
-import org.colxj.signers.LocalTransactionSigner;
-import org.colxj.signers.TransactionSigner.ProposedTransaction;
-import org.colxj.wallet.KeyBag;
-import org.colxj.wallet.RedeemData;
+import org.lightpaycashj.core.Coin;
+import org.lightpaycashj.core.ECKey;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.ScriptException;
+import org.lightpaycashj.core.Transaction;
+import org.lightpaycashj.core.TransactionInput;
+import org.lightpaycashj.core.TransactionOutput;
+import org.lightpaycashj.core.Utils;
+import org.lightpaycashj.crypto.TransactionSignature;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.script.ScriptBuilder;
+import org.lightpaycashj.script.ScriptChunk;
+import static org.lightpaycashj.script.ScriptOpCodes.getOpCodeName;
+import org.lightpaycashj.signers.LocalTransactionSigner;
+import org.lightpaycashj.signers.TransactionSigner.ProposedTransaction;
+import org.lightpaycashj.wallet.KeyBag;
+import org.lightpaycashj.wallet.RedeemData;
 
 /**
  * Test case generator for transactions with low-S and high-S signatures, to

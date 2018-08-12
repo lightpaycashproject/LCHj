@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
-import static org.colxj.core.Coin.CENT;
-import static org.colxj.core.Coin.COIN;
-import static org.colxj.core.Coin.SATOSHI;
-import static org.colxj.core.Coin.ZERO;
+import static org.lightpaycashj.core.Coin.CENT;
+import static org.lightpaycashj.core.Coin.COIN;
+import static org.lightpaycashj.core.Coin.SATOSHI;
+import static org.lightpaycashj.core.Coin.ZERO;
 import static org.junit.Assert.assertEquals;
 
 import java.util.Locale;
 
 import org.junit.Test;
 
-import org.colxj.core.Coin;
+import org.lightpaycashj.core.Coin;
 
 public class MonetaryFormatTest {
 

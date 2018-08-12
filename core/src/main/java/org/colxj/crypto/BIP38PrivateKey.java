@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 import com.google.common.base.Charsets;
 import com.google.common.base.Objects;
 import com.google.common.primitives.Bytes;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
 /**
  * Exceptions thrown by the MnemonicCode module.

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.channels;
+package org.lightpaycashj.protocols.channels;
 
 /**
  * Used when a given value is either too large too afford or too small for the network to accept.

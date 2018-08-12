@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.payments;
+package org.lightpaycashj.protocols.payments;
 
 import java.security.cert.X509Certificate;
 import java.util.List;

@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.core.BloomFilter;
-import org.colxj.core.ECKey;
-import org.colxj.crypto.*;
-import org.colxj.utils.ListenerRegistration;
-import org.colxj.utils.Threading;
-import org.colxj.wallet.listeners.KeyChainEventListener;
+import org.lightpaycashj.core.BloomFilter;
+import org.lightpaycashj.core.ECKey;
+import org.lightpaycashj.crypto.*;
+import org.lightpaycashj.utils.ListenerRegistration;
+import org.lightpaycashj.utils.Threading;
+import org.lightpaycashj.wallet.listeners.KeyChainEventListener;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
@@ -349,8 +349,8 @@ public class BasicKeyChain implements EncryptableKeyChain {
     /**
      * Returns a new BasicKeyChain that contains all basic, ORIGINAL type keys and also any encrypted keys extracted
      * from the list. Unrecognised key types are ignored.
-     * @throws org.colxj.wallet.UnreadableWalletException.BadPassword if the password doesn't seem to match
-     * @throws org.colxj.wallet.UnreadableWalletException if the data structures are corrupted/inconsistent
+     * @throws org.lightpaycashj.wallet.UnreadableWalletException.BadPassword if the password doesn't seem to match
+     * @throws org.lightpaycashj.wallet.UnreadableWalletException if the data structures are corrupted/inconsistent
      */
     public static BasicKeyChain fromProtobufEncrypted(List<Protos.Key> keys, KeyCrypter crypter) throws UnreadableWalletException {
         BasicKeyChain chain = new BasicKeyChain(checkNotNull(crypter));
@@ -434,7 +434,7 @@ public class BasicKeyChain implements EncryptableKeyChain {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
-     * Convenience wrapper around {@link #toEncrypted(org.colxj.crypto.KeyCrypter,
+     * Convenience wrapper around {@link #toEncrypted(org.lightpaycashj.crypto.KeyCrypter,
      * org.spongycastle.crypto.params.KeyParameter)} which uses the default Scrypt key derivation algorithm and
      * parameters, derives a key from the given password and returns the created key.
      */
@@ -449,7 +449,7 @@ public class BasicKeyChain implements EncryptableKeyChain {
 
     /**
      * Encrypt the wallet using the KeyCrypter and the AES key. A good default KeyCrypter to use is
-     * {@link org.colxj.crypto.KeyCrypterScrypt}.
+     * {@link org.lightpaycashj.crypto.KeyCrypterScrypt}.
      *
      * @param keyCrypter The KeyCrypter that specifies how to encrypt/ decrypt a key
      * @param aesKey AES key to use (normally created using KeyCrypter#deriveKey and cached as it is time consuming

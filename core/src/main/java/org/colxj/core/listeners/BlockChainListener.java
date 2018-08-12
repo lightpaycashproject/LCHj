@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.colxj.core.listeners;
+package org.lightpaycashj.core.listeners;
 
 /**
  * Old interface for backwards compatibility. Implement the more specific interfaces instead.

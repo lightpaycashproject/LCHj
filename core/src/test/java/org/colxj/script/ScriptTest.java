@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.colxj.script;
+package org.lightpaycashj.script;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.colxj.core.*;
-import org.colxj.core.Transaction.SigHash;
-import org.colxj.crypto.TransactionSignature;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.TestNet3Params;
-import org.colxj.script.Script.VerifyFlag;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.core.Transaction.SigHash;
+import org.lightpaycashj.crypto.TransactionSignature;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.script.Script.VerifyFlag;
 import com.google.common.base.Charsets;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
@@ -41,9 +41,9 @@ import java.math.BigInteger;
 import java.nio.charset.Charset;
 import java.util.*;
 
-import static org.colxj.core.Utils.HEX;
-import static org.colxj.script.ScriptOpCodes.OP_0;
-import static org.colxj.script.ScriptOpCodes.OP_INVALIDOPCODE;
+import static org.lightpaycashj.core.Utils.HEX;
+import static org.lightpaycashj.script.ScriptOpCodes.OP_0;
+import static org.lightpaycashj.script.ScriptOpCodes.OP_INVALIDOPCODE;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.*;
 import org.junit.Before;

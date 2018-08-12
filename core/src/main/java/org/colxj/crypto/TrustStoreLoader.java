@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
 import javax.annotation.Nonnull;
 import java.io.File;

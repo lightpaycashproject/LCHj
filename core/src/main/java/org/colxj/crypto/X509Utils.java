@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
 import com.google.common.base.Joiner;
 import org.spongycastle.asn1.ASN1ObjectIdentifier;
@@ -38,8 +38,8 @@ import java.util.List;
 
 /**
  * X509Utils provides tools for working with X.509 certificates and keystores, as used in the BIP 70 payment protocol.
- * For more details on this, see {@link org.colxj.protocols.payments.PaymentSession}, the article "Working with
- * the payment protocol" on the colxj website, or the Bitcoin developer guide.
+ * For more details on this, see {@link org.lightpaycashj.protocols.payments.PaymentSession}, the article "Working with
+ * the payment protocol" on the lightpaycashj website, or the Bitcoin developer guide.
  */
 public class X509Utils {
     /**

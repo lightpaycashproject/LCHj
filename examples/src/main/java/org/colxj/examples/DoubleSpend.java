@@ -12,19 +12,19 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
-import org.colxj.core.listeners.PreMessageReceivedEventListener;
-import org.colxj.core.*;
-import org.colxj.kits.WalletAppKit;
-import org.colxj.params.RegTestParams;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.utils.Threading;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.listeners.PreMessageReceivedEventListener;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.kits.WalletAppKit;
+import org.lightpaycashj.params.RegTestParams;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.utils.Threading;
+import org.lightpaycashj.wallet.Wallet;
 
 import java.io.File;
 
-import static org.colxj.core.Coin.*;
+import static org.lightpaycashj.core.Coin.*;
 
 /**
  * This is a little test app that waits for a coin on a local regtest node, then  generates two transactions that double

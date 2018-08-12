@@ -15,9 +15,9 @@
 package wallettemplate;
 
 import javafx.scene.layout.HBox;
-import org.colxj.core.*;
-import org.colxj.wallet.SendRequest;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.wallet.SendRequest;
+import org.lightpaycashj.wallet.Wallet;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;

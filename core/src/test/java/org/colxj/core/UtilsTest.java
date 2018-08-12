@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import java.math.BigInteger;
 import java.util.Date;

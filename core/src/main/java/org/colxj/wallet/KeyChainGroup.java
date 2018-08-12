@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
 import com.google.common.collect.*;
 import com.google.protobuf.*;
-import org.colxj.core.*;
-import org.colxj.crypto.*;
-import org.colxj.script.*;
-import org.colxj.utils.*;
-import org.colxj.wallet.listeners.KeyChainEventListener;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.crypto.*;
+import org.lightpaycashj.script.*;
+import org.lightpaycashj.utils.*;
+import org.lightpaycashj.wallet.listeners.KeyChainEventListener;
 import org.slf4j.*;
 import org.spongycastle.crypto.params.*;
 
@@ -35,7 +35,7 @@ import java.util.concurrent.*;
 import static com.google.common.base.Preconditions.*;
 
 /**
- * <p>A KeyChainGroup is used by the {@link org.colxj.wallet.Wallet} and
+ * <p>A KeyChainGroup is used by the {@link org.lightpaycashj.wallet.Wallet} and
  * manages: a {@link BasicKeyChain} object (which will normally be empty), and zero or more
  * {@link DeterministicKeyChain}s. A deterministic key chain will be created lazily/on demand
  * when a fresh or current key is requested, possibly being initialized from the private key bytes of the earliest non
@@ -486,7 +486,7 @@ public class KeyChainGroup implements KeyBag {
     /**
      * Whether the active keychain is married.  A keychain is married when it vends P2SH addresses
      * from multiple keychains in a multisig relationship.
-     * @see org.colxj.wallet.MarriedKeyChain
+     * @see org.lightpaycashj.wallet.MarriedKeyChain
      */
     public final boolean isMarried() {
         return !chains.isEmpty() && getActiveKeyChain().isMarried();
@@ -494,9 +494,9 @@ public class KeyChainGroup implements KeyBag {
 
     /**
      * Encrypt the keys in the group using the KeyCrypter and the AES key. A good default KeyCrypter to use is
-     * {@link org.colxj.crypto.KeyCrypterScrypt}.
+     * {@link org.lightpaycashj.crypto.KeyCrypterScrypt}.
      *
-     * @throws org.colxj.crypto.KeyCrypterException Thrown if the wallet encryption fails for some reason,
+     * @throws org.lightpaycashj.crypto.KeyCrypterException Thrown if the wallet encryption fails for some reason,
      *         leaving the group unchanged.
      * @throws DeterministicUpgradeRequiredException Thrown if there are random keys but no HD chain.
      */
@@ -521,9 +521,9 @@ public class KeyChainGroup implements KeyBag {
 
     /**
      * Decrypt the keys in the group using the previously given key crypter and the AES key. A good default
-     * KeyCrypter to use is {@link org.colxj.crypto.KeyCrypterScrypt}.
+     * KeyCrypter to use is {@link org.lightpaycashj.crypto.KeyCrypterScrypt}.
      *
-     * @throws org.colxj.crypto.KeyCrypterException Thrown if the wallet decryption fails for some reason, leaving the group unchanged.
+     * @throws org.lightpaycashj.crypto.KeyCrypterException Thrown if the wallet decryption fails for some reason, leaving the group unchanged.
      */
     public void decrypt(KeyParameter aesKey) {
         // This code must be exception safe.

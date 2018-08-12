@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
-import org.colxj.core.Utils;
+import org.lightpaycashj.core.Utils;
 
 import org.junit.Before;
 import org.junit.Test;

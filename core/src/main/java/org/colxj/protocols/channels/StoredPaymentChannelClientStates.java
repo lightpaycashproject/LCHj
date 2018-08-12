@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.channels;
+package org.lightpaycashj.protocols.channels;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import org.colxj.core.*;
-import org.colxj.utils.Threading;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.WalletExtension;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.utils.Threading;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.WalletExtension;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.HashMultimap;

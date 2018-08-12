@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.colxj.core.listeners;
+package org.lightpaycashj.core.listeners;
 
-import org.colxj.core.Block;
-import org.colxj.core.FilteredBlock;
-import org.colxj.core.Peer;
-import org.colxj.core.Utils;
+import org.lightpaycashj.core.Block;
+import org.lightpaycashj.core.FilteredBlock;
+import org.lightpaycashj.core.Peer;
+import org.lightpaycashj.core.Utils;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
 import org.slf4j.Logger;

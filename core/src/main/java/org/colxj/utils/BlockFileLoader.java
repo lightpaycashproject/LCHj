@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
-import org.colxj.core.Block;
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.ProtocolException;
-import org.colxj.core.Utils;
+import org.lightpaycashj.core.Block;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.ProtocolException;
+import org.lightpaycashj.core.Utils;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.store.BlockStore;
-import org.colxj.store.BlockStoreException;
-import org.colxj.store.FullPrunedBlockStore;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.BlockStoreException;
+import org.lightpaycashj.store.FullPrunedBlockStore;
 import com.google.common.base.Charsets;
 import com.google.common.hash.HashCode;
 import com.google.common.hash.Hasher;
@@ -55,7 +55,7 @@ import static com.google.common.base.Preconditions.*;
  * </ol>
  *
  * <p>Checkpoints are used by the SPV {@link BlockChain} to initialize fresh
- * {@link org.colxj.store.SPVBlockStore}s. They are not used by fully validating mode, which instead has a
+ * {@link org.lightpaycashj.store.SPVBlockStore}s. They are not used by fully validating mode, which instead has a
  * different concept of checkpoints that are used to hard-code the validity of blocks that violate BIP30 (duplicate
  * coinbase transactions). Those "checkpoints" can be found in NetworkParameters.</p>
  *
@@ -83,7 +83,7 @@ public class CheckpointManager {
 
     public static final BaseEncoding BASE64 = BaseEncoding.base64().omitPadding();
 
-    /** Loads the default checkpoints bundled with colxj */
+    /** Loads the default checkpoints bundled with lightpaycashj */
     public CheckpointManager(Context context) throws IOException {
         this(context.getParams(), null);
     }
@@ -106,7 +106,7 @@ public class CheckpointManager {
             throw new IOException("Unsupported format.");
     }
 
-    /** Returns a checkpoints stream pointing to inside the colxj JAR */
+    /** Returns a checkpoints stream pointing to inside the lightpaycashj JAR */
     public static InputStream openStream(NetworkParameters params) {
         return CheckpointManager.class.getResourceAsStream("/" + params.getId() + ".checkpoints.txt");
     }

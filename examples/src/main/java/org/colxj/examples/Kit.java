@@ -12,26 +12,26 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
-import org.colxj.core.*;
-import org.colxj.kits.WalletAppKit;
-import org.colxj.params.TestNet3Params;
-import org.colxj.script.Script;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.listeners.KeyChainEventListener;
-import org.colxj.wallet.listeners.ScriptsChangeEventListener;
-import org.colxj.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.colxj.wallet.listeners.WalletCoinsSentEventListener;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.kits.WalletAppKit;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.listeners.KeyChainEventListener;
+import org.lightpaycashj.wallet.listeners.ScriptsChangeEventListener;
+import org.lightpaycashj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.lightpaycashj.wallet.listeners.WalletCoinsSentEventListener;
 
 import java.io.File;
 import java.util.List;
 
-import org.colxj.core.listeners.TransactionConfidenceEventListener;
+import org.lightpaycashj.core.listeners.TransactionConfidenceEventListener;
 
 /**
- * The following example shows how to use the by colxj provided WalletAppKit.
- * The WalletAppKit class wraps the boilerplate (Peers, BlockChain, BlockStorage, Wallet) needed to set up a new SPV colxj app.
+ * The following example shows how to use the by lightpaycashj provided WalletAppKit.
+ * The WalletAppKit class wraps the boilerplate (Peers, BlockChain, BlockStorage, Wallet) needed to set up a new SPV lightpaycashj app.
  * 
  * In this example we also define a WalletEventListener class with implementors that are called when the wallet changes (for example sending/receiving money)
  */
@@ -59,7 +59,7 @@ public class Kit {
         //kit.connectToLocalHost();
 
         // Now we start the kit and sync the blockchain.
-        // colxj is working a lot with the Google Guava libraries. The WalletAppKit extends the AbstractIdleService. Have a look at the introduction to Guava services: https://github.com/google/guava/wiki/ServiceExplained
+        // lightpaycashj is working a lot with the Google Guava libraries. The WalletAppKit extends the AbstractIdleService. Have a look at the introduction to Guava services: https://github.com/google/guava/wiki/ServiceExplained
         kit.startAsync();
         kit.awaitRunning();
 

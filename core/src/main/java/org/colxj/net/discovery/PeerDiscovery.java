@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.colxj.net.discovery;
+package org.lightpaycashj.net.discovery;
 
 import java.net.InetSocketAddress;
 import java.util.concurrent.TimeUnit;

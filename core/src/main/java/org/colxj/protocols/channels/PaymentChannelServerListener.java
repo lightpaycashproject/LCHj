@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.channels;
+package org.lightpaycashj.protocols.channels;
 
-import org.colxj.core.Coin;
-import org.colxj.core.Sha256Hash;
-import org.colxj.core.TransactionBroadcaster;
-import org.colxj.net.NioServer;
-import org.colxj.net.ProtobufConnection;
-import org.colxj.net.StreamConnectionFactory;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.Coin;
+import org.lightpaycashj.core.Sha256Hash;
+import org.lightpaycashj.core.TransactionBroadcaster;
+import org.lightpaycashj.net.NioServer;
+import org.lightpaycashj.net.ProtobufConnection;
+import org.lightpaycashj.net.StreamConnectionFactory;
+import org.lightpaycashj.wallet.Wallet;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.protobuf.ByteString;

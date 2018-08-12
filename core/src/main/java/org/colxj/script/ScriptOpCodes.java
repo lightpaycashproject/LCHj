@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.script;
+package org.lightpaycashj.script;
 
 import com.google.common.collect.ImmutableMap;
 
@@ -22,7 +22,7 @@ import java.util.Map;
 
 /**
  * Various constants that define the assembly-like scripting language that forms part of the Bitcoin protocol.
- * See {@link org.colxj.script.Script} for details. Also provides a method to convert them to a string.
+ * See {@link org.lightpaycashj.script.Script} for details. Also provides a method to convert them to a string.
  */
 public class ScriptOpCodes {
     // push value

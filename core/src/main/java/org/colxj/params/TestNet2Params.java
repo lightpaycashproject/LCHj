@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.params;
+package org.lightpaycashj.params;
 
-import org.colxj.core.CoinDefinition;
+import org.lightpaycashj.core.CoinDefinition;
 
 
 import static com.google.common.base.Preconditions.checkState;

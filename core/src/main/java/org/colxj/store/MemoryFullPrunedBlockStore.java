@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.store;
+package org.lightpaycashj.store;
 
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 import com.google.common.base.Objects;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
@@ -229,7 +229,7 @@ class TransactionalMultiKeyHashMap<UniqueKeyType, MultiKeyType, ValueType> {
 }
 
 /**
- * Keeps {@link StoredBlock}s, {@link StoredUndoableBlock}s and {@link org.colxj.core.UTXO}s in memory.
+ * Keeps {@link StoredBlock}s, {@link StoredUndoableBlock}s and {@link org.lightpaycashj.core.UTXO}s in memory.
  * Used primarily for unit testing.
  */
 public class MemoryFullPrunedBlockStore implements FullPrunedBlockStore {

@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.channels;
+package org.lightpaycashj.protocols.channels;
 
-import org.colxj.core.*;
-import org.colxj.script.Script;
-import org.colxj.script.ScriptBuilder;
-import org.colxj.testing.TestWithWallet;
-import org.colxj.wallet.SendRequest;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.script.ScriptBuilder;
+import org.lightpaycashj.testing.TestWithWallet;
+import org.lightpaycashj.wallet.SendRequest;
+import org.lightpaycashj.wallet.Wallet;
 
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.ListenableFuture;
@@ -40,9 +40,9 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import static org.colxj.core.Coin.*;
-import static org.colxj.testing.FakeTxBuilder.createFakeTx;
-import static org.colxj.testing.FakeTxBuilder.makeSolvedTestBlock;
+import static org.lightpaycashj.core.Coin.*;
+import static org.lightpaycashj.testing.FakeTxBuilder.createFakeTx;
+import static org.lightpaycashj.testing.FakeTxBuilder.makeSolvedTestBlock;
 import static org.junit.Assert.*;
 
 @RunWith(Parameterized.class)

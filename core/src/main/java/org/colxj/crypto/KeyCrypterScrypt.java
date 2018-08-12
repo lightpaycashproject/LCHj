@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
 import com.google.common.base.Objects;
 import com.google.protobuf.ByteString;
 import com.lambdaworks.crypto.SCrypt;
-import org.colxj.core.Utils;
-import org.colxj.wallet.Protos;
-import org.colxj.wallet.Protos.ScryptParameters;
-import org.colxj.wallet.Protos.Wallet.EncryptionType;
+import org.lightpaycashj.core.Utils;
+import org.lightpaycashj.wallet.Protos;
+import org.lightpaycashj.wallet.Protos.ScryptParameters;
+import org.lightpaycashj.wallet.Protos.Wallet.EncryptionType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.BufferedBlockCipher;

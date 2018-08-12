@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
-import org.colxj.core.Coin;
+import org.lightpaycashj.core.Coin;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -29,12 +29,12 @@ import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
 
-import static org.colxj.core.Coin.*;
-import static org.colxj.core.NetworkParameters.MAX_MONEY;
-import static org.colxj.utils.BtcAutoFormat.Style.CODE;
-import static org.colxj.utils.BtcAutoFormat.Style.SYMBOL;
-import static org.colxj.utils.BtcFixedFormat.REPEATING_DOUBLETS;
-import static org.colxj.utils.BtcFixedFormat.REPEATING_TRIPLETS;
+import static org.lightpaycashj.core.Coin.*;
+import static org.lightpaycashj.core.NetworkParameters.MAX_MONEY;
+import static org.lightpaycashj.utils.BtcAutoFormat.Style.CODE;
+import static org.lightpaycashj.utils.BtcAutoFormat.Style.SYMBOL;
+import static org.lightpaycashj.utils.BtcFixedFormat.REPEATING_DOUBLETS;
+import static org.lightpaycashj.utils.BtcFixedFormat.REPEATING_TRIPLETS;
 import static java.text.NumberFormat.Field.DECIMAL_SEPARATOR;
 import static java.util.Locale.*;
 import static org.junit.Assert.*;

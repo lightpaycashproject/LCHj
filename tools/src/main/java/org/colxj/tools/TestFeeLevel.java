@@ -12,16 +12,16 @@
  * limitations under the License.
  */
 
-package org.colxj.tools;
+package org.lightpaycashj.tools;
 
-import org.colxj.core.*;
-import org.colxj.core.listeners.PeerConnectedEventListener;
-import org.colxj.core.listeners.PeerDisconnectedEventListener;
-import org.colxj.kits.WalletAppKit;
-import org.colxj.params.MainNetParams;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.wallet.SendRequest;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.core.listeners.PeerConnectedEventListener;
+import org.lightpaycashj.core.listeners.PeerDisconnectedEventListener;
+import org.lightpaycashj.kits.WalletAppKit;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.wallet.SendRequest;
+import org.lightpaycashj.wallet.Wallet;
 
 import java.io.File;
 

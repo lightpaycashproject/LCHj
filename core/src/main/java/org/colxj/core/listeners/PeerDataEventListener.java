@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.core.listeners;
+package org.lightpaycashj.core.listeners;
 
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 
 /**
  * <p>Implementors can listen to events like blocks being downloaded/transactions being broadcast/connect/disconnects,

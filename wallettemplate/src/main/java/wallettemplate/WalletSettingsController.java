@@ -14,9 +14,9 @@
 
 package wallettemplate;
 
-import org.colxj.core.Utils;
-import org.colxj.crypto.MnemonicCode;
-import org.colxj.wallet.DeterministicSeed;
+import org.lightpaycashj.core.Utils;
+import org.lightpaycashj.crypto.MnemonicCode;
+import org.lightpaycashj.wallet.DeterministicSeed;
 import com.google.common.base.Splitter;
 import com.google.common.util.concurrent.Service;
 import javafx.application.Platform;
@@ -168,7 +168,7 @@ public class WalletSettingsController {
 
         long birthday = datePicker.getValue().atStartOfDay().toEpochSecond(ZoneOffset.UTC);
         DeterministicSeed seed = new DeterministicSeed(Splitter.on(' ').splitToList(wordsArea.getText()), null, "", birthday);
-        // Shut down colxj and restart it with the new seed.
+        // Shut down lightpaycashj and restart it with the new seed.
         Main.colx.addListener(new Service.Listener() {
             @Override
             public void terminated(Service.State from) {

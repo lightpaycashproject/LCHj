@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
 import java.net.InetAddress;
-import org.colxj.core.FullPrunedBlockChain;
-import org.colxj.core.PeerGroup;
-import org.colxj.params.MainNetParams;
-import org.colxj.store.FullPrunedBlockStore;
-import org.colxj.store.LevelDBFullPrunedBlockStore;
+import org.lightpaycashj.core.FullPrunedBlockChain;
+import org.lightpaycashj.core.PeerGroup;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.store.FullPrunedBlockStore;
+import org.lightpaycashj.store.LevelDBFullPrunedBlockStore;
 
 public class LevelDB {
     public static void main(String[] args) throws Exception {

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.colxj.net;
+package org.lightpaycashj.net;
 
 import com.google.common.base.Throwables;
 import com.google.common.util.concurrent.*;
-import org.colxj.utils.*;
+import org.lightpaycashj.utils.*;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;

@@ -1,6 +1,6 @@
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.store.BlockStore;
+import org.lightpaycashj.store.BlockStore;
 import org.darkcoinj.DarkSend;
 import org.darkcoinj.InstantSend;
 

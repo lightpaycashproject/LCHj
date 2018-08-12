@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.channels;
+package org.lightpaycashj.protocols.channels;
 
-import org.colxj.core.Coin;
-import org.colxj.core.ECKey;
-import org.colxj.core.InsufficientMoneyException;
-import org.colxj.core.Sha256Hash;
-import org.colxj.core.Utils;
-import org.colxj.net.NioClient;
-import org.colxj.net.ProtobufConnection;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.Coin;
+import org.lightpaycashj.core.ECKey;
+import org.lightpaycashj.core.InsufficientMoneyException;
+import org.lightpaycashj.core.Sha256Hash;
+import org.lightpaycashj.core.Utils;
+import org.lightpaycashj.net.NioClient;
+import org.lightpaycashj.net.ProtobufConnection;
+import org.lightpaycashj.wallet.Wallet;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
@@ -49,7 +49,7 @@ public class PaymentChannelClientConnection {
     /**
      * Attempts to open a new connection to and open a payment channel with the given host and port, blocking until the
      * connection is open. The server is requested to keep the channel open for
-     * {@link org.colxj.protocols.channels.PaymentChannelClient#DEFAULT_TIME_WINDOW}
+     * {@link org.lightpaycashj.protocols.channels.PaymentChannelClient#DEFAULT_TIME_WINDOW}
      * seconds. If the server proposes a longer time the channel will be closed.
      *
      * @param server         The host/port pair where the server is listening.
@@ -75,7 +75,7 @@ public class PaymentChannelClientConnection {
     /**
      * Attempts to open a new connection to and open a payment channel with the given host and port, blocking until the
      * connection is open. The server is requested to keep the channel open for
-     * {@link org.colxj.protocols.channels.PaymentChannelClient#DEFAULT_TIME_WINDOW}
+     * {@link org.lightpaycashj.protocols.channels.PaymentChannelClient#DEFAULT_TIME_WINDOW}
      * seconds. If the server proposes a longer time the channel will be closed.
      *
      * @param server          The host/port pair where the server is listening.

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 public class UTXOProviderException extends Exception {
     public UTXOProviderException() {

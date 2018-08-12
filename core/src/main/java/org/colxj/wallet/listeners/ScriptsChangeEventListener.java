@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet.listeners;
+package org.lightpaycashj.wallet.listeners;
 
-import org.colxj.script.Script;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.wallet.Wallet;
 
 import java.util.List;
 

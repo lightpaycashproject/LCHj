@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.colxj.store;
+package org.lightpaycashj.store;
 
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * Keeps {@link org.colxj.core.StoredBlock}s in memory. Used primarily for unit testing.
+ * Keeps {@link org.lightpaycashj.core.StoredBlock}s in memory. Used primarily for unit testing.
  */
 public class MemoryBlockStore implements BlockStore {
     private LinkedHashMap<Sha256Hash, StoredBlock> blockMap = new LinkedHashMap<Sha256Hash, StoredBlock>() {

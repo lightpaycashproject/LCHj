@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.colxj.tools;
+package org.lightpaycashj.tools;
 
-import org.colxj.crypto.TrustStoreLoader;
-import org.colxj.protocols.payments.PaymentProtocol;
-import org.colxj.protocols.payments.PaymentProtocolException;
-import org.colxj.protocols.payments.PaymentSession;
-import org.colxj.uri.PivxURI;
-import org.colxj.uri.BitcoinURIParseException;
+import org.lightpaycashj.crypto.TrustStoreLoader;
+import org.lightpaycashj.protocols.payments.PaymentProtocol;
+import org.lightpaycashj.protocols.payments.PaymentProtocolException;
+import org.lightpaycashj.protocols.payments.PaymentSession;
+import org.lightpaycashj.uri.PivxURI;
+import org.lightpaycashj.uri.BitcoinURIParseException;
 import org.bitcoin.protocols.payments.Protos;
 
 import java.io.FileInputStream;

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 
 import java.util.HashSet;
 import java.util.Iterator;

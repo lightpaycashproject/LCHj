@@ -12,9 +12,9 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
-import org.colxj.core.Utils;
+import org.lightpaycashj.core.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

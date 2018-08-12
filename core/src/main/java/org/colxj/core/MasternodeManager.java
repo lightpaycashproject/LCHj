@@ -1,12 +1,12 @@
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.script.Script;
-import org.colxj.script.ScriptBuilder;
-import org.colxj.store.BlockStore;
-import org.colxj.store.BlockStoreException;
-import org.colxj.utils.ListenerRegistration;
-import org.colxj.utils.Pair;
-import org.colxj.utils.Threading;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.script.ScriptBuilder;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.BlockStoreException;
+import org.lightpaycashj.utils.ListenerRegistration;
+import org.lightpaycashj.utils.Pair;
+import org.lightpaycashj.utils.Threading;
 import org.darkcoinj.DarkSendSigner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +19,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.locks.ReentrantLock;
 
 import static com.google.common.base.Preconditions.checkState;
-import static org.colxj.core.MasterNodeSystem.MASTERNODE_REMOVAL_SECONDS;
+import static org.lightpaycashj.core.MasterNodeSystem.MASTERNODE_REMOVAL_SECONDS;
 
 /**
  * Created by Hash Engineering on 2/20/2016.

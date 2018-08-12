@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.script.Script;
+import org.lightpaycashj.script.Script;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.Serializable;
 
-import static org.colxj.core.Utils.int64ToByteStreamLE;
-import static org.colxj.core.Utils.uint32ToByteStreamLE;
+import static org.lightpaycashj.core.Utils.int64ToByteStreamLE;
+import static org.lightpaycashj.core.Utils.uint32ToByteStreamLE;
 
 public class MasterNodeVote  extends ChildMessage implements Serializable {
     public int votes;

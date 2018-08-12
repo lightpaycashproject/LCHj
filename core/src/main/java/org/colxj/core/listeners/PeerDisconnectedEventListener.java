@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.core.listeners;
+package org.lightpaycashj.core.listeners;
 
-import org.colxj.core.Peer;
+import org.lightpaycashj.core.Peer;
 
 /**
  * <p>Implementors can listen to events indicating a peer disconnecting.</p>

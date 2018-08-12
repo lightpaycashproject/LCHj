@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.core.Transaction;
+import org.lightpaycashj.core.Transaction;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
- * Stores data about a transaction that is only relevant to the {@link org.colxj.wallet.Wallet} class.
+ * Stores data about a transaction that is only relevant to the {@link org.lightpaycashj.wallet.Wallet} class.
  */
 public class WalletTransaction {
     public enum Pool {

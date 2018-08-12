@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.channels;
+package org.lightpaycashj.protocols.channels;
 
 import com.google.common.collect.Multimap;
 import com.google.common.collect.MultimapBuilder;
-import org.colxj.core.*;
-import org.colxj.crypto.TransactionSignature;
-import org.colxj.script.Script;
-import org.colxj.script.ScriptBuilder;
-import org.colxj.wallet.AllowUnconfirmedCoinSelector;
-import org.colxj.wallet.SendRequest;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.crypto.TransactionSignature;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.script.ScriptBuilder;
+import org.lightpaycashj.wallet.AllowUnconfirmedCoinSelector;
+import org.lightpaycashj.wallet.SendRequest;
+import org.lightpaycashj.wallet.Wallet;
 import org.spongycastle.crypto.params.KeyParameter;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Lists;
@@ -116,7 +116,7 @@ public class PaymentChannelV1ClientState extends PaymentChannelClientState {
      * Creates the initial multisig contract and incomplete refund transaction which can be requested at the appropriate
      * time using {@link PaymentChannelV1ClientState#getIncompleteRefundTransaction} and
      * {@link PaymentChannelV1ClientState#getContract()}. The way the contract is crafted can be adjusted by
-     * overriding {@link PaymentChannelV1ClientState#editContractSendRequest(org.colxj.core.Wallet.SendRequest)}.
+     * overriding {@link PaymentChannelV1ClientState#editContractSendRequest(org.lightpaycashj.core.Wallet.SendRequest)}.
      * By default unconfirmed coins are allowed to be used, as for micropayments the risk should be relatively low.
      * @param userKey Key derived from a user password, needed for any signing when the wallet is encrypted.
      *                  The wallet KeyCrypter is assumed.

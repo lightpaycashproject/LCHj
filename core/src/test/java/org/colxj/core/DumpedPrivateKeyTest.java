@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotSame;
@@ -25,8 +25,8 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 import org.junit.Test;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.TestNet3Params;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.TestNet3Params;
 
 public class DumpedPrivateKeyTest {
 

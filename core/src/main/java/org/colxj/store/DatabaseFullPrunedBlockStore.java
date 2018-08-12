@@ -16,11 +16,11 @@
  * limitations under the License.
  */
 
-package org.colxj.store;
+package org.lightpaycashj.store;
 
 import com.google.common.collect.Lists;
-import org.colxj.core.*;
-import org.colxj.script.Script;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.script.Script;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -506,7 +506,7 @@ public abstract class DatabaseFullPrunedBlockStore implements FullPrunedBlockSto
                 results.close();
             } catch (SQLException ex) {
                 throw new BlockStoreException("Database block store is not compatible with the current release.  " +
-                        "See colxj release notes for further information: " + ex.getMessage());
+                        "See lightpaycashj release notes for further information: " + ex.getMessage());
             } finally {
                 if (ps != null && !ps.isClosed()) {
                     ps.close();
@@ -554,7 +554,7 @@ public abstract class DatabaseFullPrunedBlockStore implements FullPrunedBlockSto
     }
 
     /**
-     * Create a new store for the given {@link org.colxj.core.NetworkParameters}.
+     * Create a new store for the given {@link org.lightpaycashj.core.NetworkParameters}.
      * @param params The network.
      * @throws BlockStoreException If the store couldn't be created.
      */
@@ -1119,10 +1119,10 @@ public abstract class DatabaseFullPrunedBlockStore implements FullPrunedBlockSto
     /**
      * Calculate the balance for a coinbase, to-address, or p2sh address.
      *
-     * <p>The balance {@link org.colxj.store.DatabaseFullPrunedBlockStore#getBalanceSelectSQL()} returns
+     * <p>The balance {@link org.lightpaycashj.store.DatabaseFullPrunedBlockStore#getBalanceSelectSQL()} returns
      * the balance (summed) as an number, then use calculateClientSide=false</p>
      *
-     * <p>The balance {@link org.colxj.store.DatabaseFullPrunedBlockStore#getBalanceSelectSQL()} returns
+     * <p>The balance {@link org.lightpaycashj.store.DatabaseFullPrunedBlockStore#getBalanceSelectSQL()} returns
      * the all the openoutputs as stored in the DB (binary), then use calculateClientSide=true</p>
      *
      * @param address The address to calculate the balance of

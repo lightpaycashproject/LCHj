@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.colxj.store;
+package org.lightpaycashj.store;
 
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.Sha256Hash;
-import org.colxj.core.StoredBlock;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.Sha256Hash;
+import org.lightpaycashj.core.StoredBlock;
 
 /**
  * An implementor of BlockStore saves StoredBlock objects to disk. Different implementations store them in
@@ -46,8 +46,8 @@ public interface BlockStore {
 
     /**
      * Returns the {@link StoredBlock} that represents the top of the chain of greatest total work. Note that this
-     * can be arbitrarily expensive, you probably should use {@link org.colxj.core.BlockChain#getChainHead()}
-     * or perhaps {@link org.colxj.core.BlockChain#getBestChainHeight()} which will run in constant time and
+     * can be arbitrarily expensive, you probably should use {@link org.lightpaycashj.core.BlockChain#getChainHead()}
+     * or perhaps {@link org.lightpaycashj.core.BlockChain#getBestChainHeight()} which will run in constant time and
      * not take any heavyweight locks.
      */
     StoredBlock getChainHead() throws BlockStoreException;
@@ -61,7 +61,7 @@ public interface BlockStore {
     void close() throws BlockStoreException;
 
     /**
-     * Get the {@link org.colxj.core.NetworkParameters} of this store.
+     * Get the {@link org.lightpaycashj.core.NetworkParameters} of this store.
      * @return The network params.
      */
     NetworkParameters getParams();

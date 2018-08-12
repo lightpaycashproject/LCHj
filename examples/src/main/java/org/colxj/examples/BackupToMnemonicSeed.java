@@ -12,13 +12,13 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.Utils;
-import org.colxj.params.TestNet3Params;
-import org.colxj.wallet.DeterministicSeed;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.Utils;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.wallet.DeterministicSeed;
+import org.lightpaycashj.wallet.Wallet;
 
 /**
  * The following example shows you how to create a deterministic seed from a hierarchical deterministic wallet represented as a mnemonic code.

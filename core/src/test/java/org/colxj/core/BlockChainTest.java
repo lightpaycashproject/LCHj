@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.params.MainNetParams;
-import org.colxj.params.TestNet2Params;
-import org.colxj.params.UnitTestParams;
-import org.colxj.store.BlockStore;
-import org.colxj.store.MemoryBlockStore;
-import org.colxj.testing.FakeTxBuilder;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.Wallet.BalanceType;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.TestNet2Params;
+import org.lightpaycashj.params.UnitTestParams;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.MemoryBlockStore;
+import org.lightpaycashj.testing.FakeTxBuilder;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.Wallet.BalanceType;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import org.junit.rules.ExpectedException;
@@ -38,9 +38,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import static org.colxj.core.Coin.*;
-import static org.colxj.testing.FakeTxBuilder.createFakeBlock;
-import static org.colxj.testing.FakeTxBuilder.createFakeTx;
+import static org.lightpaycashj.core.Coin.*;
+import static org.lightpaycashj.testing.FakeTxBuilder.createFakeBlock;
+import static org.lightpaycashj.testing.FakeTxBuilder.createFakeTx;
 import static org.junit.Assert.*;
 
 // Handling of chain splits/reorgs are in ChainSplitTests.

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.core.listeners;
+package org.lightpaycashj.core.listeners;
 
-import org.colxj.core.Transaction;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.Transaction;
+import org.lightpaycashj.wallet.Wallet;
 
 /**
  * <p>Implementors are called when confidence of a transaction changes.</p>

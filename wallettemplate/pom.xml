@@ -4,15 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.colxj</groupId>
-        <artifactId>colxj-parent</artifactId>
+        <groupId>org.lightpaycashj</groupId>
+        <artifactId>lightpaycashj-parent</artifactId>
         <version>1.03</version>
     </parent>
 
-    <groupId>org.colxj</groupId>
+    <groupId>org.lightpaycashj</groupId>
     <artifactId>wallettemplate</artifactId>
 
-    <name>colxj Wallet-Template</name>
+    <name>lightpaycashj Wallet-Template</name>
 
     <build>
         <plugins>
@@ -57,8 +57,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.colxj</groupId>
-            <artifactId>colxj-core</artifactId>
+            <groupId>org.lightpaycashj</groupId>
+            <artifactId>lightpaycashj-core</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>

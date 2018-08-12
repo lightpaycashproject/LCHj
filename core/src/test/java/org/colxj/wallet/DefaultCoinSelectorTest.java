@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.core.*;
-import org.colxj.params.*;
-import org.colxj.testing.*;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.params.*;
+import org.lightpaycashj.testing.*;
 import org.junit.*;
 
 import java.net.*;
 import java.util.*;
 
 import static com.google.common.base.Preconditions.*;
-import static org.colxj.core.Coin.*;
+import static org.lightpaycashj.core.Coin.*;
 import static org.junit.Assert.*;
 
 public class DefaultCoinSelectorTest extends TestWithWallet {

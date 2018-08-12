@@ -15,51 +15,51 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.core.listeners.TransactionConfidenceEventListener;
-import org.colxj.core.AbstractBlockChain;
-import org.colxj.core.Address;
-import org.colxj.core.Block;
-import org.colxj.core.BlockChain;
-import org.colxj.core.Coin;
-import org.colxj.core.ECKey;
-import org.colxj.core.InsufficientMoneyException;
-import org.colxj.core.PeerAddress;
-import org.colxj.core.Sha256Hash;
-import org.colxj.core.StoredBlock;
-import org.colxj.core.Transaction;
-import org.colxj.core.TransactionConfidence;
-import org.colxj.core.TransactionInput;
-import org.colxj.core.TransactionOutPoint;
-import org.colxj.core.TransactionOutput;
-import org.colxj.core.Utils;
-import org.colxj.core.VerificationException;
-import org.colxj.core.TransactionConfidence.ConfidenceType;
-import org.colxj.crypto.*;
-import org.colxj.script.Script;
-import org.colxj.script.ScriptBuilder;
-import org.colxj.signers.StatelessTransactionSigner;
-import org.colxj.signers.TransactionSigner;
-import org.colxj.store.BlockStoreException;
-import org.colxj.store.MemoryBlockStore;
-import org.colxj.testing.*;
-import org.colxj.utils.ExchangeRate;
-import org.colxj.utils.Fiat;
-import org.colxj.utils.Threading;
-import org.colxj.wallet.Wallet.BalanceType;
-import org.colxj.wallet.WalletTransaction.Pool;
-import org.colxj.wallet.listeners.KeyChainEventListener;
-import org.colxj.wallet.listeners.WalletChangeEventListener;
-import org.colxj.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.colxj.wallet.listeners.WalletCoinsSentEventListener;
+import org.lightpaycashj.core.listeners.TransactionConfidenceEventListener;
+import org.lightpaycashj.core.AbstractBlockChain;
+import org.lightpaycashj.core.Address;
+import org.lightpaycashj.core.Block;
+import org.lightpaycashj.core.BlockChain;
+import org.lightpaycashj.core.Coin;
+import org.lightpaycashj.core.ECKey;
+import org.lightpaycashj.core.InsufficientMoneyException;
+import org.lightpaycashj.core.PeerAddress;
+import org.lightpaycashj.core.Sha256Hash;
+import org.lightpaycashj.core.StoredBlock;
+import org.lightpaycashj.core.Transaction;
+import org.lightpaycashj.core.TransactionConfidence;
+import org.lightpaycashj.core.TransactionInput;
+import org.lightpaycashj.core.TransactionOutPoint;
+import org.lightpaycashj.core.TransactionOutput;
+import org.lightpaycashj.core.Utils;
+import org.lightpaycashj.core.VerificationException;
+import org.lightpaycashj.core.TransactionConfidence.ConfidenceType;
+import org.lightpaycashj.crypto.*;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.script.ScriptBuilder;
+import org.lightpaycashj.signers.StatelessTransactionSigner;
+import org.lightpaycashj.signers.TransactionSigner;
+import org.lightpaycashj.store.BlockStoreException;
+import org.lightpaycashj.store.MemoryBlockStore;
+import org.lightpaycashj.testing.*;
+import org.lightpaycashj.utils.ExchangeRate;
+import org.lightpaycashj.utils.Fiat;
+import org.lightpaycashj.utils.Threading;
+import org.lightpaycashj.wallet.Wallet.BalanceType;
+import org.lightpaycashj.wallet.WalletTransaction.Pool;
+import org.lightpaycashj.wallet.listeners.KeyChainEventListener;
+import org.lightpaycashj.wallet.listeners.WalletChangeEventListener;
+import org.lightpaycashj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.lightpaycashj.wallet.listeners.WalletCoinsSentEventListener;
 import org.easymock.EasyMock;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.protobuf.ByteString;
-import org.colxj.wallet.Protos.Wallet.EncryptionType;
+import org.lightpaycashj.wallet.Protos.Wallet.EncryptionType;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -79,9 +79,9 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
-import static org.colxj.core.Coin.*;
-import static org.colxj.core.Utils.HEX;
-import static org.colxj.testing.FakeTxBuilder.*;
+import static org.lightpaycashj.core.Coin.*;
+import static org.lightpaycashj.core.Utils.HEX;
+import static org.lightpaycashj.testing.FakeTxBuilder.*;
 import static org.easymock.EasyMock.createMock;
 import static org.easymock.EasyMock.replay;
 import static com.google.common.base.Preconditions.checkNotNull;
@@ -807,7 +807,7 @@ public class WalletTest extends TestWithWallet {
         Transaction send1 = checkNotNull(wallet.createSend(OTHER_ADDRESS, value2));
         Transaction send2 = checkNotNull(wallet.createSend(OTHER_ADDRESS, value2));
         byte[] buf = send1.bitcoinSerialize();
-        buf[43] = 0;  // Break the signature: colxj won't check in SPV mode and this is easier than other mutations.
+        buf[43] = 0;  // Break the signature: lightpaycashj won't check in SPV mode and this is easier than other mutations.
         send1 = PARAMS.getDefaultSerializer().makeTransaction(buf);
         wallet.commitTx(send2);
         wallet.allowSpendingUnconfirmedTransactions();
@@ -1779,7 +1779,7 @@ public class WalletTest extends TestWithWallet {
     @Test
     public void autosaveImmediate() throws Exception {
         // Test that the wallet will save itself automatically when it changes.
-        File f = File.createTempFile("colxj-unit-test", null);
+        File f = File.createTempFile("lightpaycashj-unit-test", null);
         Sha256Hash hash1 = Sha256Hash.of(f);
         // Start with zero delay and ensure the wallet file changes after adding a key.
         wallet.autosaveToFile(f, 0, TimeUnit.SECONDS, null);
@@ -1801,7 +1801,7 @@ public class WalletTest extends TestWithWallet {
         // an auto-save cycle of 1 second.
         final File[] results = new File[2];
         final CountDownLatch latch = new CountDownLatch(3);
-        File f = File.createTempFile("colxj-unit-test", null);
+        File f = File.createTempFile("lightpaycashj-unit-test", null);
         Sha256Hash hash1 = Sha256Hash.of(f);
         wallet.autosaveToFile(f, 1, TimeUnit.SECONDS,
                 new WalletFiles.Listener() {

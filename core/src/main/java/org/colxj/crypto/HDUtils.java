@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
-import org.colxj.core.ECKey;
+import org.lightpaycashj.core.ECKey;
 import com.google.common.base.Joiner;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;

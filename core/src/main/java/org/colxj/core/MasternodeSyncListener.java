@@ -1,4 +1,4 @@
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 /**
  * Created by Hash Engineering on 2/28/2016.

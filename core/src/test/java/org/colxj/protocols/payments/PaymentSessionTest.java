@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.payments;
+package org.lightpaycashj.protocols.payments;
 
-import org.colxj.core.*;
-import org.colxj.crypto.TrustStoreLoader;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.TestNet3Params;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.crypto.TrustStoreLoader;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.TestNet3Params;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.protobuf.ByteString;
 import org.bitcoin.protocols.payments.Protos;
@@ -32,7 +32,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Date;
 
-import static org.colxj.core.Coin.COIN;
+import static org.lightpaycashj.core.Coin.COIN;
 import static org.junit.Assert.*;
 
 public class PaymentSessionTest {

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.jni;
+package org.lightpaycashj.jni;
 
-import org.colxj.core.TransactionConfidence;
+import org.lightpaycashj.core.TransactionConfidence;
 
 /**
  * An event listener that relays events to a native C++ object. A pointer to that object is stored in

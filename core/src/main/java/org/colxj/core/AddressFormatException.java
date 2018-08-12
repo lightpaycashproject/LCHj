@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 @SuppressWarnings("serial")
 public class AddressFormatException extends IllegalArgumentException {

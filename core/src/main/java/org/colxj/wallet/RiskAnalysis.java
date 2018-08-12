@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.core.Transaction;
+import org.lightpaycashj.core.Transaction;
 
 import java.util.List;
 

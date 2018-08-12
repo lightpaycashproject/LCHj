@@ -1,6 +1,6 @@
 package org.darkcoinj;
 
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

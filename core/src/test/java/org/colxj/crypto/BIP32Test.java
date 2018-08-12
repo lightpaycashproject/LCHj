@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
-import org.colxj.core.Base58;
+import org.lightpaycashj.core.Base58;
 import com.google.common.base.Functions;
 import com.google.common.base.Joiner;
 import com.google.common.collect.Iterables;
-import org.colxj.core.NetworkParameters;
-import org.colxj.params.MainNetParams;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.params.MainNetParams;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,7 +31,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
-import static org.colxj.core.Utils.HEX;
+import static org.lightpaycashj.core.Utils.HEX;
 import static org.junit.Assert.assertEquals;
 
 /**

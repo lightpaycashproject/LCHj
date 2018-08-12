@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.colxj.script;
+package org.lightpaycashj.script;
 
 import com.google.common.collect.Lists;
-import org.colxj.core.Address;
-import org.colxj.core.ECKey;
-import org.colxj.core.Utils;
-import org.colxj.crypto.TransactionSignature;
+import org.lightpaycashj.core.Address;
+import org.lightpaycashj.core.ECKey;
+import org.lightpaycashj.core.Utils;
+import org.lightpaycashj.crypto.TransactionSignature;
 
 import javax.annotation.Nullable;
 import java.math.BigInteger;
@@ -32,11 +32,11 @@ import java.util.Stack;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkState;
-import static org.colxj.script.ScriptOpCodes.*;
+import static org.lightpaycashj.script.ScriptOpCodes.*;
 
 /**
  * <p>Tools for the construction of commonly used script types. You don't normally need this as it's hidden behind
- * convenience methods on {@link org.colxj.core.Transaction}, but they are useful when working with the
+ * convenience methods on {@link org.lightpaycashj.core.Transaction}, but they are useful when working with the
  * protocol at a lower level.</p>
  */
 public class ScriptBuilder {

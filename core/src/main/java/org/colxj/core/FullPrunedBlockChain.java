@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.script.Script;
-import org.colxj.script.Script.VerifyFlag;
-import org.colxj.store.BlockStoreException;
-import org.colxj.store.FullPrunedBlockStore;
-import org.colxj.utils.*;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.script.Script.VerifyFlag;
+import org.lightpaycashj.store.BlockStoreException;
+import org.lightpaycashj.store.FullPrunedBlockStore;
+import org.lightpaycashj.utils.*;
+import org.lightpaycashj.wallet.Wallet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

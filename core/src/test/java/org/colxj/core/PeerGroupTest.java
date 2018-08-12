@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.*;
 import com.google.common.net.*;
 import com.google.common.util.concurrent.*;
-import org.colxj.core.listeners.*;
-import org.colxj.net.discovery.*;
-import org.colxj.testing.*;
-import org.colxj.utils.*;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.listeners.*;
+import org.lightpaycashj.net.discovery.*;
+import org.lightpaycashj.testing.*;
+import org.lightpaycashj.utils.*;
+import org.lightpaycashj.wallet.Wallet;
 import org.junit.*;
 import org.junit.runner.*;
 import org.junit.runners.*;
@@ -36,7 +36,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 
-import static org.colxj.core.Coin.*;
+import static org.lightpaycashj.core.Coin.*;
 import static org.junit.Assert.*;
 
 

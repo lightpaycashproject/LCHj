@@ -14,10 +14,10 @@
 
 package wallettemplate.utils;
 
-import org.colxj.core.listeners.DownloadProgressTracker;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.listeners.WalletChangeEventListener;
-import org.colxj.core.*;
+import org.lightpaycashj.core.listeners.DownloadProgressTracker;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.listeners.WalletChangeEventListener;
+import org.lightpaycashj.core.*;
 import javafx.application.Platform;
 import javafx.beans.property.ReadOnlyDoubleProperty;
 import javafx.beans.property.ReadOnlyObjectProperty;

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.store.BlockStoreException;
-import org.colxj.store.FullPrunedBlockStore;
-import org.colxj.store.MySQLFullPrunedBlockStore;
+import org.lightpaycashj.store.BlockStoreException;
+import org.lightpaycashj.store.FullPrunedBlockStore;
+import org.lightpaycashj.store.MySQLFullPrunedBlockStore;
 import org.junit.After;
 import org.junit.Ignore;
 
@@ -36,7 +36,7 @@ public class MySQLFullPrunedBlockChainTest extends AbstractFullPrunedBlockChainT
     // Replace these with your mysql location/credentials and remove @Ignore to test
     private static final String DB_HOSTNAME = "localhost";
     private static final String DB_NAME = "bitcoinj_test";
-    private static final String DB_USERNAME = "colxj";
+    private static final String DB_USERNAME = "lightpaycashj";
     private static final String DB_PASSWORD = "password";
 
     @Override

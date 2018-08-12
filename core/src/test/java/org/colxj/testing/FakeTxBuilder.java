@@ -15,20 +15,20 @@
  * limitations under the License.
  */
 
-package org.colxj.testing;
+package org.lightpaycashj.testing;
 
-import org.colxj.core.*;
-import org.colxj.crypto.TransactionSignature;
-import org.colxj.script.ScriptBuilder;
-import org.colxj.store.BlockStore;
-import org.colxj.store.BlockStoreException;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.crypto.TransactionSignature;
+import org.lightpaycashj.script.ScriptBuilder;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.BlockStoreException;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.Random;
 
-import static org.colxj.core.Coin.*;
+import static org.lightpaycashj.core.Coin.*;
 import static com.google.common.base.Preconditions.checkState;
 
 public class FakeTxBuilder {

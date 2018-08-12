@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.store.BlockStore;
-import org.colxj.store.BlockStoreException;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.BlockStoreException;
 import com.google.common.base.Objects;
 
 import java.math.BigInteger;

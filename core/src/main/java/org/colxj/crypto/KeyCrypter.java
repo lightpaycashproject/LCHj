@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
-import org.colxj.wallet.Protos.Wallet.EncryptionType;
+import org.lightpaycashj.wallet.Protos.Wallet.EncryptionType;
 import org.spongycastle.crypto.params.KeyParameter;
 
 import java.io.Serializable;

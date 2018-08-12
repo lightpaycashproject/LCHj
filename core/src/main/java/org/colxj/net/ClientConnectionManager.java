@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.net;
+package org.lightpaycashj.net;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.Service;

@@ -12,15 +12,15 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
-import org.colxj.core.listeners.DownloadProgressTracker;
-import org.colxj.core.*;
-import org.colxj.net.discovery.DnsDiscovery;
-import org.colxj.params.TestNet3Params;
-import org.colxj.store.SPVBlockStore;
-import org.colxj.wallet.DeterministicSeed;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.listeners.DownloadProgressTracker;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.net.discovery.DnsDiscovery;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.store.SPVBlockStore;
+import org.lightpaycashj.wallet.DeterministicSeed;
+import org.lightpaycashj.wallet.Wallet;
 
 import java.io.File;
 

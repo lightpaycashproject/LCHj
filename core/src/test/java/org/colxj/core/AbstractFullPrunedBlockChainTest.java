@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import com.google.common.collect.Lists;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.UnitTestParams;
-import org.colxj.script.Script;
-import org.colxj.store.BlockStoreException;
-import org.colxj.store.FullPrunedBlockStore;
-import org.colxj.utils.BlockFileLoader;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.wallet.SendRequest;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.WalletTransaction;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.UnitTestParams;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.store.BlockStoreException;
+import org.lightpaycashj.store.FullPrunedBlockStore;
+import org.lightpaycashj.utils.BlockFileLoader;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.wallet.SendRequest;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.WalletTransaction;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -38,7 +38,7 @@ import java.lang.ref.WeakReference;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.colxj.core.Coin.FIFTY_COINS;
+import static org.lightpaycashj.core.Coin.FIFTY_COINS;
 import static org.junit.Assert.*;
 import org.junit.rules.ExpectedException;
 

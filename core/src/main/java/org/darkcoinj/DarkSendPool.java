@@ -1,9 +1,9 @@
 package org.darkcoinj;
 
-import org.colxj.core.*;
-import org.colxj.script.Script;
-import org.colxj.utils.ContextPropagatingThreadFactory;
-import org.colxj.utils.Threading;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.utils.ContextPropagatingThreadFactory;
+import org.lightpaycashj.utils.Threading;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

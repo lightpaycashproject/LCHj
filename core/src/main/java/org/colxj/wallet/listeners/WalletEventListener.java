@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet.listeners;
+package org.lightpaycashj.wallet.listeners;
 
-import org.colxj.core.listeners.TransactionConfidenceEventListener;
+import org.lightpaycashj.core.listeners.TransactionConfidenceEventListener;
 
 /**
  * <p>Common interface for wallet changes and transactions.</p>

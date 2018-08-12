@@ -12,14 +12,14 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
-import org.colxj.core.Transaction.SigHash;
-import org.colxj.crypto.TransactionSignature;
-import org.colxj.script.Script;
-import org.colxj.script.ScriptBuilder;
+import org.lightpaycashj.core.Transaction.SigHash;
+import org.lightpaycashj.crypto.TransactionSignature;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.script.ScriptBuilder;
 import com.google.common.base.Preconditions;
 
 import javax.annotation.Nullable;
@@ -30,8 +30,8 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.util.*;
 
-import static org.colxj.core.Coin.*;
-import static org.colxj.script.ScriptOpCodes.*;
+import static org.lightpaycashj.core.Coin.*;
+import static org.lightpaycashj.script.ScriptOpCodes.*;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
 

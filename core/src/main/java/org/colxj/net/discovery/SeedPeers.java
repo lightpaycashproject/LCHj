@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.net.discovery;
+package org.lightpaycashj.net.discovery;
 
-import org.colxj.core.NetworkParameters;
+import org.lightpaycashj.core.NetworkParameters;
 
 import javax.annotation.Nullable;
 import java.net.InetAddress;

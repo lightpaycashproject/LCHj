@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.colxj.testing;
+package org.lightpaycashj.testing;
 
-import org.colxj.core.Sha256Hash;
-import org.colxj.crypto.ChildNumber;
-import org.colxj.crypto.DeterministicKey;
-import org.colxj.signers.CustomTransactionSigner;
-import org.colxj.wallet.DeterministicKeyChain;
+import org.lightpaycashj.core.Sha256Hash;
+import org.lightpaycashj.crypto.ChildNumber;
+import org.lightpaycashj.crypto.DeterministicKey;
+import org.lightpaycashj.signers.CustomTransactionSigner;
+import org.lightpaycashj.wallet.DeterministicKeyChain;
 import com.google.common.collect.ImmutableList;
 
 import java.util.List;

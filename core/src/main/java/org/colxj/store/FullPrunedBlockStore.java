@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.store;
+package org.lightpaycashj.store;
 
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 
 
 /**
@@ -72,17 +72,17 @@ public interface FullPrunedBlockStore extends BlockStore, UTXOProvider {
     StoredUndoableBlock getUndoBlock(Sha256Hash hash) throws BlockStoreException;
     
     /**
-     * Gets a {@link org.colxj.core.UTXO} with the given hash and index, or null if none is found
+     * Gets a {@link org.lightpaycashj.core.UTXO} with the given hash and index, or null if none is found
      */
     UTXO getTransactionOutput(Sha256Hash hash, long index) throws BlockStoreException;
     
     /**
-     * Adds a {@link org.colxj.core.UTXO} to the list of unspent TransactionOutputs
+     * Adds a {@link org.lightpaycashj.core.UTXO} to the list of unspent TransactionOutputs
      */
     void addUnspentTransactionOutput(UTXO out) throws BlockStoreException;
     
     /**
-     * Removes a {@link org.colxj.core.UTXO} from the list of unspent TransactionOutputs
+     * Removes a {@link org.lightpaycashj.core.UTXO} from the list of unspent TransactionOutputs
      * Note that the coinbase of the genesis block should NEVER be spendable and thus never in the list.
      * @throws BlockStoreException if there is an underlying storage issue, or out was not in the list.
      */

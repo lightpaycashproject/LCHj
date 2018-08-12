@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.colxj.core.listeners;
+package org.lightpaycashj.core.listeners;
 
 import java.util.List;
-import org.colxj.core.StoredBlock;
-import org.colxj.core.VerificationException;
+import org.lightpaycashj.core.StoredBlock;
+import org.lightpaycashj.core.VerificationException;
 
 /**
  * Listener interface for when the best chain has changed.
@@ -26,7 +26,7 @@ import org.colxj.core.VerificationException;
 public interface ReorganizeListener {
 
     /**
-     * Called by the {@link org.colxj.core.BlockChain} when the best chain
+     * Called by the {@link org.lightpaycashj.core.BlockChain} when the best chain
      * (representing total work done) has changed. In this case,
      * we need to go through our transactions and find out if any have become invalid. It's possible for our balance
      * to go down in this case: money we thought we had can suddenly vanish if the rest of the network agrees it

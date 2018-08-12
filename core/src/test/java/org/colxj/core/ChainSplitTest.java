@@ -15,20 +15,20 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.core.listeners.TransactionConfidenceEventListener;
-import org.colxj.core.TransactionConfidence.ConfidenceType;
-import org.colxj.params.UnitTestParams;
-import org.colxj.store.MemoryBlockStore;
-import org.colxj.testing.FakeTxBuilder;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.utils.Threading;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.WalletTransaction;
-import org.colxj.wallet.listeners.WalletChangeEventListener;
-import org.colxj.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.colxj.wallet.listeners.WalletReorganizeEventListener;
+import org.lightpaycashj.core.listeners.TransactionConfidenceEventListener;
+import org.lightpaycashj.core.TransactionConfidence.ConfidenceType;
+import org.lightpaycashj.params.UnitTestParams;
+import org.lightpaycashj.store.MemoryBlockStore;
+import org.lightpaycashj.testing.FakeTxBuilder;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.utils.Threading;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.WalletTransaction;
+import org.lightpaycashj.wallet.listeners.WalletChangeEventListener;
+import org.lightpaycashj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.lightpaycashj.wallet.listeners.WalletReorganizeEventListener;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -42,7 +42,7 @@ import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.colxj.core.Coin.*;
+import static org.lightpaycashj.core.Coin.*;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static org.junit.Assert.*;
 

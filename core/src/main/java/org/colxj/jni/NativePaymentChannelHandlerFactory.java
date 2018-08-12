@@ -12,10 +12,10 @@
  * limitations under the License.
  */
 
-package org.colxj.jni;
+package org.lightpaycashj.jni;
 
-import org.colxj.protocols.channels.PaymentChannelServerListener;
-import org.colxj.protocols.channels.ServerConnectionEventHandler;
+import org.lightpaycashj.protocols.channels.PaymentChannelServerListener;
+import org.lightpaycashj.protocols.channels.ServerConnectionEventHandler;
 
 import javax.annotation.Nullable;
 import java.net.SocketAddress;

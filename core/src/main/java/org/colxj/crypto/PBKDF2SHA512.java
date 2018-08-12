@@ -21,7 +21,7 @@
  * 
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;

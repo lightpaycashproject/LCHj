@@ -12,14 +12,14 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import com.google.common.collect.ImmutableList;
-import org.colxj.params.MainNetParams;
-import org.colxj.script.Script;
-import org.colxj.script.ScriptBuilder;
-import org.colxj.testing.TestWithWallet;
-import org.colxj.wallet.SendRequest;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.script.ScriptBuilder;
+import org.lightpaycashj.testing.TestWithWallet;
+import org.lightpaycashj.wallet.SendRequest;
 import org.hamcrest.CoreMatchers;
 import org.junit.After;
 import org.junit.Before;

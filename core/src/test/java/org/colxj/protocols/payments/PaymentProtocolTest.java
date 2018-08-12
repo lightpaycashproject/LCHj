@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.payments;
+package org.lightpaycashj.protocols.payments;
 
-import org.colxj.core.*;
-import org.colxj.crypto.X509Utils;
-import org.colxj.params.TestNet3Params;
-import org.colxj.params.UnitTestParams;
-import org.colxj.protocols.payments.PaymentProtocol.Output;
-import org.colxj.protocols.payments.PaymentProtocol.PkiVerificationData;
-import org.colxj.protocols.payments.PaymentProtocolException.PkiVerificationException;
-import org.colxj.script.ScriptBuilder;
-import org.colxj.testing.FakeTxBuilder;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.crypto.X509Utils;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.params.UnitTestParams;
+import org.lightpaycashj.protocols.payments.PaymentProtocol.Output;
+import org.lightpaycashj.protocols.payments.PaymentProtocol.PkiVerificationData;
+import org.lightpaycashj.protocols.payments.PaymentProtocolException.PkiVerificationException;
+import org.lightpaycashj.script.ScriptBuilder;
+import org.lightpaycashj.testing.FakeTxBuilder;
 import org.bitcoin.protocols.payments.Protos;
 import org.bitcoin.protocols.payments.Protos.Payment;
 import org.bitcoin.protocols.payments.Protos.PaymentACK;

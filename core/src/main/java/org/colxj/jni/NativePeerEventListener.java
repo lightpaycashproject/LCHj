@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.jni;
+package org.lightpaycashj.jni;
 
-import org.colxj.core.listeners.*;
-import org.colxj.core.*;
+import org.lightpaycashj.core.listeners.*;
+import org.lightpaycashj.core.*;
 
 import javax.annotation.*;
 import java.util.List;

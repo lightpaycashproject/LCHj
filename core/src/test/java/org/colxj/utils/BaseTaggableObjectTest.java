@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
 import com.google.protobuf.ByteString;
 import org.junit.Before;

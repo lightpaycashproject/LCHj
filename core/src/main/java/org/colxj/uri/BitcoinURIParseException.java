@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.uri;
+package org.lightpaycashj.uri;
 
 /**
  * <p>Exception to provide the following to {@link PivxURI}:</p>

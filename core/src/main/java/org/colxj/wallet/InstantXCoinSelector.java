@@ -1,8 +1,8 @@
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.core.Transaction;
-import org.colxj.core.TransactionConfidence;
-import org.colxj.params.RegTestParams;
+import org.lightpaycashj.core.Transaction;
+import org.lightpaycashj.core.TransactionConfidence;
+import org.lightpaycashj.params.RegTestParams;
 
 /**
  * Created by Eric on 1/15/2016.

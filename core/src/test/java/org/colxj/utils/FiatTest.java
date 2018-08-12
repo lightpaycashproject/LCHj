@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
-import static org.colxj.utils.Fiat.parseFiat;
+import static org.lightpaycashj.utils.Fiat.parseFiat;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;

@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.colxj.core.listeners;
+package org.lightpaycashj.core.listeners;
 
-import org.colxj.core.Block;
-import org.colxj.core.FilteredBlock;
-import org.colxj.core.GetDataMessage;
-import org.colxj.core.Message;
-import org.colxj.core.PeerAddress;
-import org.colxj.core.Peer;
-import org.colxj.core.Transaction;
+import org.lightpaycashj.core.Block;
+import org.lightpaycashj.core.FilteredBlock;
+import org.lightpaycashj.core.GetDataMessage;
+import org.lightpaycashj.core.Message;
+import org.lightpaycashj.core.PeerAddress;
+import org.lightpaycashj.core.Peer;
+import org.lightpaycashj.core.Transaction;
 import javax.annotation.*;
 import java.util.List;
 import java.util.Set;

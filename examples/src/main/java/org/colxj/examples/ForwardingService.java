@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
-import org.colxj.core.*;
-import org.colxj.crypto.KeyCrypterException;
-import org.colxj.kits.WalletAppKit;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.RegTestParams;
-import org.colxj.params.TestNet3Params;
-import org.colxj.store.FlatDB;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.crypto.KeyCrypterException;
+import org.lightpaycashj.kits.WalletAppKit;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.RegTestParams;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.store.FlatDB;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
@@ -87,7 +87,7 @@ public class ForwardingService {
         kit.wallet().addCoinsReceivedEventListener(new WalletCoinsReceivedEventListener() {
             @Override
             public void onCoinsReceived(Wallet w, Transaction tx, Coin prevBalance, Coin newBalance) {
-                // Runs in the dedicated "user thread" (see colxj docs for more info on this).
+                // Runs in the dedicated "user thread" (see lightpaycashj docs for more info on this).
                 //
                 // The transaction "tx" can either be pending, or included into a block (we didn't see the broadcast).
                 Coin value = tx.getValueSentToMe(w);

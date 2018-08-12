@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
-import org.colxj.core.NetworkParameters;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.RegTestParams;
-import org.colxj.params.TestNet3Params;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.RegTestParams;
+import org.lightpaycashj.params.TestNet3Params;
 
 public enum NetworkEnum {
     MAIN,

@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.colxj.net.discovery;
+package org.lightpaycashj.net.discovery;
 
 import com.google.common.collect.Lists;
 import com.squareup.okhttp.OkHttpClient;
 
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.VersionMessage;
-import org.colxj.net.discovery.DnsDiscovery.DnsSeedDiscovery;
-import org.colxj.utils.*;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.VersionMessage;
+import org.lightpaycashj.net.discovery.DnsDiscovery.DnsSeedDiscovery;
+import org.lightpaycashj.utils.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import com.google.common.net.InetAddresses;
-import org.colxj.params.MainNetParams;
+import org.lightpaycashj.params.MainNetParams;
 
 import java.io.IOException;
 import java.io.OutputStream;

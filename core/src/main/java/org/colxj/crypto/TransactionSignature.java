@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
-import org.colxj.core.ECKey;
-import org.colxj.core.Transaction;
-import org.colxj.core.VerificationException;
-import org.colxj.core.Transaction.SigHash;
+import org.lightpaycashj.core.ECKey;
+import org.lightpaycashj.core.Transaction;
+import org.lightpaycashj.core.VerificationException;
+import org.lightpaycashj.core.Transaction.SigHash;
 import com.google.common.base.Preconditions;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.math.BigInteger;
 
 /**
- * A TransactionSignature wraps an {@link org.colxj.core.ECKey.ECDSASignature} and adds methods for handling
+ * A TransactionSignature wraps an {@link org.lightpaycashj.core.ECKey.ECDSASignature} and adds methods for handling
  * the additional SIGHASH mode byte that is used.
  */
 public class TransactionSignature extends ECKey.ECDSASignature {

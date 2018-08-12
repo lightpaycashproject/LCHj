@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
 import com.google.common.collect.ImmutableList;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.colxj.core.Utils.HEX;
+import static org.lightpaycashj.core.Utils.HEX;
 import java.util.List;
 
 public class HDUtilsTest {

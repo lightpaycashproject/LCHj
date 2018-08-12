@@ -1,10 +1,10 @@
-package org.colxj.kits;
+package org.lightpaycashj.kits;
 
-import org.colxj.core.NetworkParameters;
-import org.colxj.store.BlockStore;
-import org.colxj.store.BlockStoreException;
-import org.colxj.store.LevelDBBlockStore;
-import org.colxj.store.SPVBlockStore;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.BlockStoreException;
+import org.lightpaycashj.store.LevelDBBlockStore;
+import org.lightpaycashj.store.SPVBlockStore;
 
 import java.io.File;
 

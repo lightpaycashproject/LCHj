@@ -1,4 +1,4 @@
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 
 import org.darkcoinj.DarkSendSigner;

@@ -15,25 +15,25 @@
  * limitations under the License.
  */
 
-package org.colxj.tools;
+package org.lightpaycashj.tools;
 
-import org.colxj.core.*;
-import org.colxj.crypto.*;
-import org.colxj.net.discovery.DnsDiscovery;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.RegTestParams;
-import org.colxj.params.TestNet3Params;
-import org.colxj.protocols.payments.PaymentProtocol;
-import org.colxj.protocols.payments.PaymentProtocolException;
-import org.colxj.protocols.payments.PaymentSession;
-import org.colxj.script.ScriptBuilder;
-import org.colxj.store.*;
-import org.colxj.uri.PivxURI;
-import org.colxj.uri.BitcoinURIParseException;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.wallet.DeterministicSeed;
-import org.colxj.wallet.DeterministicUpgradeRequiredException;
-import org.colxj.wallet.DeterministicUpgradeRequiresPassword;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.crypto.*;
+import org.lightpaycashj.net.discovery.DnsDiscovery;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.RegTestParams;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.protocols.payments.PaymentProtocol;
+import org.lightpaycashj.protocols.payments.PaymentProtocolException;
+import org.lightpaycashj.protocols.payments.PaymentSession;
+import org.lightpaycashj.script.ScriptBuilder;
+import org.lightpaycashj.store.*;
+import org.lightpaycashj.uri.PivxURI;
+import org.lightpaycashj.uri.BitcoinURIParseException;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.wallet.DeterministicSeed;
+import org.lightpaycashj.wallet.DeterministicUpgradeRequiredException;
+import org.lightpaycashj.wallet.DeterministicUpgradeRequiresPassword;
 import com.google.common.base.Charsets;
 import com.google.common.base.Splitter;
 import com.google.common.collect.ImmutableList;
@@ -47,19 +47,19 @@ import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
 import joptsimple.util.DateConverter;
 
-import org.colxj.core.listeners.BlocksDownloadedEventListener;
-import org.colxj.core.listeners.DownloadProgressTracker;
-import org.colxj.wallet.MarriedKeyChain;
-import org.colxj.wallet.Protos;
-import org.colxj.wallet.SendRequest;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.WalletExtension;
-import org.colxj.wallet.WalletProtobufSerializer;
-import org.colxj.wallet.Wallet.BalanceType;
-import org.colxj.wallet.listeners.WalletChangeEventListener;
-import org.colxj.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.colxj.wallet.listeners.WalletCoinsSentEventListener;
-import org.colxj.wallet.listeners.WalletReorganizeEventListener;
+import org.lightpaycashj.core.listeners.BlocksDownloadedEventListener;
+import org.lightpaycashj.core.listeners.DownloadProgressTracker;
+import org.lightpaycashj.wallet.MarriedKeyChain;
+import org.lightpaycashj.wallet.Protos;
+import org.lightpaycashj.wallet.SendRequest;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.WalletExtension;
+import org.lightpaycashj.wallet.WalletProtobufSerializer;
+import org.lightpaycashj.wallet.Wallet.BalanceType;
+import org.lightpaycashj.wallet.listeners.WalletChangeEventListener;
+import org.lightpaycashj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.lightpaycashj.wallet.listeners.WalletCoinsSentEventListener;
+import org.lightpaycashj.wallet.listeners.WalletReorganizeEventListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.params.KeyParameter;
@@ -83,7 +83,7 @@ import java.util.concurrent.TimeoutException;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 
-import static org.colxj.core.Coin.parseCoin;
+import static org.lightpaycashj.core.Coin.parseCoin;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 /**

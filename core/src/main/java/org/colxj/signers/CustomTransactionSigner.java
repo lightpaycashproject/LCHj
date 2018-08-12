@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.colxj.signers;
+package org.lightpaycashj.signers;
 
-import org.colxj.core.*;
-import org.colxj.crypto.ChildNumber;
-import org.colxj.crypto.TransactionSignature;
-import org.colxj.script.Script;
-import org.colxj.wallet.KeyBag;
-import org.colxj.wallet.RedeemData;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.crypto.ChildNumber;
+import org.lightpaycashj.crypto.TransactionSignature;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.wallet.KeyBag;
+import org.lightpaycashj.wallet.RedeemData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,7 +32,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 /**
  * <p>This signer may be used as a template for creating custom multisig transaction signers.</p>
  * <p>
- * Concrete implementations have to implement {@link #getSignature(org.colxj.core.Sha256Hash, java.util.List)}
+ * Concrete implementations have to implement {@link #getSignature(org.lightpaycashj.core.Sha256Hash, java.util.List)}
  * method returning a signature and a public key of the keypair used to created that signature.
  * It's up to custom implementation where to locate signatures: it may be a network connection,
  * some local API or something else.

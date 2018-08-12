@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import org.darkcoinj.DarkSendSigner;
 import org.darkcoinj.InstantSend;

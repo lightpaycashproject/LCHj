@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet.listeners;
+package org.lightpaycashj.wallet.listeners;
 
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.wallet.Wallet;
 
 /**
  * <p>Implementors are called when the wallet is reorganized.</p>

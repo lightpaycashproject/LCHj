@@ -12,15 +12,15 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.payments;
+package org.lightpaycashj.protocols.payments;
 
-import org.colxj.core.*;
-import org.colxj.crypto.TrustStoreLoader;
-import org.colxj.params.MainNetParams;
-import org.colxj.protocols.payments.PaymentProtocol.PkiVerificationData;
-import org.colxj.uri.PivxURI;
-import org.colxj.utils.Threading;
-import org.colxj.wallet.SendRequest;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.crypto.TrustStoreLoader;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.protocols.payments.PaymentProtocol.PkiVerificationData;
+import org.lightpaycashj.uri.PivxURI;
+import org.lightpaycashj.utils.Threading;
+import org.lightpaycashj.wallet.SendRequest;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.util.concurrent.ListenableFuture;

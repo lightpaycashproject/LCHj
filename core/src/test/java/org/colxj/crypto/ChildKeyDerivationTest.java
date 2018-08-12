@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
-import org.colxj.core.*;
-import org.colxj.params.*;
-import org.colxj.wallet.DeterministicKeyChain;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.params.*;
+import org.lightpaycashj.wallet.DeterministicKeyChain;
 import org.junit.*;
 import org.spongycastle.crypto.params.*;
 
-import static org.colxj.core.Utils.*;
+import static org.lightpaycashj.core.Utils.*;
 import static org.junit.Assert.*;
 
 /**

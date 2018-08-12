@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.params.*;
-import org.colxj.testing.*;
-import org.colxj.utils.*;
+import org.lightpaycashj.params.*;
+import org.lightpaycashj.testing.*;
+import org.lightpaycashj.utils.*;
 import org.junit.*;
 
 import java.net.*;
 
-import static org.colxj.core.Coin.*;
+import static org.lightpaycashj.core.Coin.*;
 import static org.junit.Assert.*;
 
 public class TxConfidenceTableTest {

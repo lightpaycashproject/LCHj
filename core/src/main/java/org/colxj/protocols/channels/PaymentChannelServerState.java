@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.channels;
+package org.lightpaycashj.protocols.channels;
 
-import org.colxj.wallet.SendRequest;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.wallet.SendRequest;
+import org.lightpaycashj.wallet.Wallet;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Multimap;
@@ -25,9 +25,9 @@ import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
-import org.colxj.core.*;
-import org.colxj.crypto.TransactionSignature;
-import org.colxj.script.Script;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.crypto.TransactionSignature;
+import org.lightpaycashj.script.Script;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

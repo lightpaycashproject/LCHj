@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.params.MainNetParams;
-import org.colxj.wallet.KeyChainGroup;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.wallet.KeyChainGroup;
+import org.lightpaycashj.wallet.Wallet;
 import org.junit.Test;
 
 import java.util.Arrays;
 
-import static org.colxj.core.Utils.HEX;
+import static org.lightpaycashj.core.Utils.HEX;
 import static org.junit.Assert.*;
 
 public class BloomFilterTest {

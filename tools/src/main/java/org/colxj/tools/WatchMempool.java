@@ -15,22 +15,22 @@
  * limitations under the License.
  */
 
-package org.colxj.tools;
+package org.lightpaycashj.tools;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import com.google.common.collect.ImmutableList;
-import org.colxj.core.listeners.*;
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.Peer;
-import org.colxj.core.PeerGroup;
-import org.colxj.core.Transaction;
-import org.colxj.net.discovery.DnsDiscovery;
-import org.colxj.params.MainNetParams;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.wallet.DefaultRiskAnalysis;
-import org.colxj.wallet.RiskAnalysis.Result;
+import org.lightpaycashj.core.listeners.*;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.Peer;
+import org.lightpaycashj.core.PeerGroup;
+import org.lightpaycashj.core.Transaction;
+import org.lightpaycashj.net.discovery.DnsDiscovery;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.wallet.DefaultRiskAnalysis;
+import org.lightpaycashj.wallet.RiskAnalysis.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

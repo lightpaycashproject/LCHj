@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
 /**
  * <p>Exception to provide the following:</p>

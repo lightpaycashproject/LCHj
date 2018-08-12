@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.uri;
+package org.lightpaycashj.uri;
 
-import org.colxj.core.*;
-import org.colxj.params.AbstractBitcoinNetParams;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.params.AbstractBitcoinNetParams;
 
 import javax.annotation.Nullable;
 import java.io.UnsupportedEncodingException;
@@ -77,8 +77,8 @@ public class PivxURI {
     public static final String FIELD_INSTANTSEND = "is";
 
     /**
-     * URI for Bitcoin network. Use {@link org.colxj.params.AbstractBitcoinNetParams#BITCOIN_SCHEME} if you specifically
-     * need Bitcoin, or use {@link org.colxj.core.NetworkParameters#getUriScheme} to get the scheme
+     * URI for Bitcoin network. Use {@link org.lightpaycashj.params.AbstractBitcoinNetParams#BITCOIN_SCHEME} if you specifically
+     * need Bitcoin, or use {@link org.lightpaycashj.core.NetworkParameters#getUriScheme} to get the scheme
      * from network parameters.
      */
     @Deprecated

@@ -1,15 +1,15 @@
 package org.darkcoinj;
 
 import com.google.common.collect.Lists;
-import org.colxj.core.*;
-import org.colxj.utils.Threading;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.utils.Threading;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.*;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static org.colxj.core.DarkCoinSystem.fMasterNode;
+import static org.lightpaycashj.core.DarkCoinSystem.fMasterNode;
 
 /**
  * Created by Eric on 2/8/2015.

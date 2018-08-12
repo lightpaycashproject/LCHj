@@ -12,23 +12,23 @@
  * limitations under the License.
  */
 
-package org.colxj.tools;
+package org.lightpaycashj.tools;
 
-import org.colxj.core.*;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.TestNet3Params;
-import org.colxj.store.*;
-import org.colxj.utils.BlockFileLoader;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.store.*;
+import org.lightpaycashj.utils.BlockFileLoader;
 import com.google.common.base.Preconditions;
 
 import java.io.File;
 
-/** Very thin wrapper around {@link org.colxj.utils.BlockFileLoader} */
+/** Very thin wrapper around {@link org.lightpaycashj.utils.BlockFileLoader} */
 public class BlockImporter {
     public static void main(String[] args) throws BlockStoreException, VerificationException, PrunedException {
         System.out.println("USAGE: BlockImporter (prod|test) (H2|Disk|MemFull|Mem|SPV) [blockStore]");
         System.out.println("       blockStore is required unless type is Mem or MemFull");
-        System.out.println("       eg BlockImporter prod H2 /home/user/colxj.h2store");
+        System.out.println("       eg BlockImporter prod H2 /home/user/lightpaycashj.h2store");
         System.out.println("       Does full verification if the store supports it");
         Preconditions.checkArgument(args.length == 2 || args.length == 3);
         

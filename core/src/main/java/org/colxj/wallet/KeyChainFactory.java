@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.crypto.DeterministicKey;
-import org.colxj.crypto.KeyCrypter;
+import org.lightpaycashj.crypto.DeterministicKey;
+import org.lightpaycashj.crypto.KeyCrypter;
 
 /**
  * Factory interface for creation keychains while de-serializing a wallet.

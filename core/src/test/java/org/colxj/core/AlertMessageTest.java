@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.params.UnitTestParams;
+import org.lightpaycashj.params.UnitTestParams;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.colxj.core.Utils.HEX;
+import static org.lightpaycashj.core.Utils.HEX;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 

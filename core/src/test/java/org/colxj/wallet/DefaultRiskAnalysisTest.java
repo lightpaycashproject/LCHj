@@ -15,21 +15,21 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
 import com.google.common.collect.*;
-import org.colxj.core.*;
-import org.colxj.crypto.*;
-import org.colxj.params.*;
-import org.colxj.script.*;
-import org.colxj.testing.FakeTxBuilder;
-import org.colxj.wallet.DefaultRiskAnalysis.*;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.crypto.*;
+import org.lightpaycashj.params.*;
+import org.lightpaycashj.script.*;
+import org.lightpaycashj.testing.FakeTxBuilder;
+import org.lightpaycashj.wallet.DefaultRiskAnalysis.*;
 import org.junit.*;
 
 import java.util.*;
 
-import static org.colxj.core.Coin.*;
-import static org.colxj.script.ScriptOpCodes.*;
+import static org.lightpaycashj.core.Coin.*;
+import static org.lightpaycashj.script.ScriptOpCodes.*;
 import static org.junit.Assert.*;
 
 public class DefaultRiskAnalysisTest {

@@ -1,6 +1,6 @@
 ### Welcome to colx
 
-The colxj library is a Java implementation of the COLX protocol, which allows it to maintain a wallet and send/receive transactions without needing a local copy of COLX Core. It comes with full documentation and some example apps showing how to use it.
+The lightpaycashj library is a Java implementation of the COLX protocol, which allows it to maintain a wallet and send/receive transactions without needing a local copy of COLX Core. It comes with full documentation and some example apps showing how to use it.
 
 ### Technologies
 
@@ -51,7 +51,7 @@ If you send coins to that address, it will forward them on to the address you sp
 
 ```
   cd examples
-  mvn exec:java -Dexec.mainClass=org.colxj.examples.ForwardingService -Dexec.args="<insert a colx address here>"
+  mvn exec:java -Dexec.mainClass=org.lightpaycashj.examples.ForwardingService -Dexec.args="<insert a colx address here>"
 
 ```
 

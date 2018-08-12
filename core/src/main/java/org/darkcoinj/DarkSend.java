@@ -1,7 +1,7 @@
 package org.darkcoinj;
 
-import org.colxj.core.DarkSendQueue;
-import org.colxj.core.Sha256Hash;
+import org.lightpaycashj.core.DarkSendQueue;
+import org.lightpaycashj.core.Sha256Hash;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

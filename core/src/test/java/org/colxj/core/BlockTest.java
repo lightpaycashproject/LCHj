@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import com.google.common.io.ByteStreams;
 
-import org.colxj.core.AbstractBlockChain.NewBlockType;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.TestNet2Params;
-import org.colxj.params.TestNet3Params;
-import org.colxj.params.UnitTestParams;
-import org.colxj.script.ScriptOpCodes;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.Wallet.BalanceType;
+import org.lightpaycashj.core.AbstractBlockChain.NewBlockType;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.TestNet2Params;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.params.UnitTestParams;
+import org.lightpaycashj.script.ScriptOpCodes;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.Wallet.BalanceType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -35,7 +35,7 @@ import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.List;
 
-import static org.colxj.core.Utils.HEX;
+import static org.lightpaycashj.core.Utils.HEX;
 import static org.junit.Assert.*;
 
 public class BlockTest {

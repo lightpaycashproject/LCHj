@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
-import org.colxj.core.Coin;
-import org.colxj.core.Monetary;
+import org.lightpaycashj.core.Coin;
+import org.lightpaycashj.core.Monetary;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormatSymbols;
@@ -391,7 +391,7 @@ public final class MonetaryFormat {
     }
 
     /**
-     * Parse a human readable coin value to a {@link org.colxj.core.Coin} instance.
+     * Parse a human readable coin value to a {@link org.lightpaycashj.core.Coin} instance.
      * 
      * @throws NumberFormatException
      *             if the string cannot be parsed for some reason
@@ -401,7 +401,7 @@ public final class MonetaryFormat {
     }
 
     /**
-     * Parse a human readable fiat value to a {@link org.colxj.utils.Fiat} instance.
+     * Parse a human readable fiat value to a {@link org.lightpaycashj.utils.Fiat} instance.
      * 
      * @throws NumberFormatException
      *             if the string cannot be parsed for some reason

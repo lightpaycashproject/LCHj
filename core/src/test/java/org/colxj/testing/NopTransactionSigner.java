@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.testing;
+package org.lightpaycashj.testing;
 
-import org.colxj.signers.TransactionSigner;
-import org.colxj.wallet.KeyBag;
+import org.lightpaycashj.signers.TransactionSigner;
+import org.lightpaycashj.wallet.KeyBag;
 
 public class NopTransactionSigner implements TransactionSigner {
     private boolean isReady;

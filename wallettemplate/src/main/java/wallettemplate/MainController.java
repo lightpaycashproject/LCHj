@@ -14,9 +14,9 @@
 
 package wallettemplate;
 
-import org.colxj.core.listeners.DownloadProgressTracker;
-import org.colxj.core.Coin;
-import org.colxj.utils.MonetaryFormat;
+import org.lightpaycashj.core.listeners.DownloadProgressTracker;
+import org.lightpaycashj.core.Coin;
+import org.lightpaycashj.utils.MonetaryFormat;
 import com.subgraph.orchid.TorClient;
 import com.subgraph.orchid.TorInitializationListener;
 import javafx.animation.FadeTransition;

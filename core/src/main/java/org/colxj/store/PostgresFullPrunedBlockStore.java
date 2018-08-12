@@ -16,9 +16,9 @@
  * limitations under the License.
  */
 
-package org.colxj.store;
+package org.lightpaycashj.store;
 
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,7 +34,7 @@ import java.util.List;
 
 /**
  * <p>A full pruned block store using the Postgres database engine. As an added bonus an address index is calculated,
- * so you can use {@link #calculateBalanceForAddress(org.colxj.core.Address)} to quickly look up
+ * so you can use {@link #calculateBalanceForAddress(org.lightpaycashj.core.Address)} to quickly look up
  * the quantity of bitcoins controlled by that address.</p>
  */
 public class PostgresFullPrunedBlockStore extends DatabaseFullPrunedBlockStore {
@@ -209,7 +209,7 @@ public class PostgresFullPrunedBlockStore extends DatabaseFullPrunedBlockStore {
                 findS.close();
 
                 // Postgres insert-or-updates are very complex (and finnicky).  This level of transaction isolation
-                // seems to work for colxj
+                // seems to work for lightpaycashj
                 PreparedStatement s =
                         conn.get().prepareStatement(getUpdateUndoableBlocksSQL());
                 s.setBytes(3, hashBytes);

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.channels;
+package org.lightpaycashj.protocols.channels;
 
-import org.colxj.core.*;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.wallet.Wallet;
 
 import javax.annotation.Nullable;
 import java.util.Date;
@@ -88,7 +88,7 @@ public class StoredServerChannel {
     }
 
     /**
-     * If a handler is connected, call its {@link org.colxj.protocols.channels.PaymentChannelServer#close()}
+     * If a handler is connected, call its {@link org.lightpaycashj.protocols.channels.PaymentChannelServer#close()}
      * method thus disconnecting the TCP connection.
      */
     synchronized void closeConnectedHandler() {

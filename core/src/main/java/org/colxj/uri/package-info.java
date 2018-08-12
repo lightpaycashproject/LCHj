@@ -15,4 +15,4 @@
 /**
  * Parsing and handling of bitcoin: textual URIs as found in qr codes and web links.
  */
-package org.colxj.uri;
+package org.lightpaycashj.uri;

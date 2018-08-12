@@ -14,8 +14,8 @@
 
 package wallettemplate.controls;
 
-import org.colxj.core.Address;
-import org.colxj.uri.PivxURI;
+import org.lightpaycashj.core.Address;
+import org.lightpaycashj.uri.PivxURI;
 import de.jensd.fx.fontawesome.AwesomeDude;
 import de.jensd.fx.fontawesome.AwesomeIcon;
 import javafx.beans.binding.StringExpression;

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.core.listeners;
+package org.lightpaycashj.core.listeners;
 
-import org.colxj.core.StoredBlock;
-import org.colxj.core.VerificationException;
+import org.lightpaycashj.core.StoredBlock;
+import org.lightpaycashj.core.VerificationException;
 
 /**
  * Listener interface for when a new block on the best chain is seen.
@@ -26,8 +26,8 @@ public interface NewBestBlockListener {
     /**
      * Called when a new block on the best chain is seen, after relevant
      * transactions are extracted and sent to us via either
-     * {@link TransactionReceivedInBlockListener#receiveFromBlock(org.colxj.core.Transaction, org.colxj.core.StoredBlock, org.colxj.core.BlockChain.NewBlockType, int relativityOffset)}
-     * or {@link TransactionReceivedInBlockListener#notifyTransactionIsInBlock(org.colxj.core.Sha256Hash, org.colxj.core.StoredBlock, org.colxj.core.BlockChain.NewBlockType, int)}.
+     * {@link TransactionReceivedInBlockListener#receiveFromBlock(org.lightpaycashj.core.Transaction, org.lightpaycashj.core.StoredBlock, org.lightpaycashj.core.BlockChain.NewBlockType, int relativityOffset)}
+     * or {@link TransactionReceivedInBlockListener#notifyTransactionIsInBlock(org.lightpaycashj.core.Sha256Hash, org.lightpaycashj.core.StoredBlock, org.lightpaycashj.core.BlockChain.NewBlockType, int)}.
      * If this block is causing a re-organise to a new chain, this method is NOT
      * called even though the block may be the new best block: your reorganize
      * implementation is expected to do whatever would normally be done do for a

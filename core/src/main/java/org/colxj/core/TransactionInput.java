@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.script.Script;
-import org.colxj.script.ScriptOpCodes;
-import org.colxj.wallet.DefaultRiskAnalysis;
-import org.colxj.wallet.KeyBag;
-import org.colxj.wallet.RedeemData;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.script.ScriptOpCodes;
+import org.lightpaycashj.wallet.DefaultRiskAnalysis;
+import org.lightpaycashj.wallet.KeyBag;
+import org.lightpaycashj.wallet.RedeemData;
 
 import com.google.common.base.Joiner;
 import com.google.common.base.Objects;
@@ -306,7 +306,7 @@ public class TransactionInput extends ChildMessage {
 
     /**
      * Alias for getOutpoint().getConnectedRedeemData(keyBag)
-     * @see TransactionOutPoint#getConnectedRedeemData(org.colxj.wallet.KeyBag)
+     * @see TransactionOutPoint#getConnectedRedeemData(org.lightpaycashj.wallet.KeyBag)
      */
     @Nullable
     public RedeemData getConnectedRedeemData(KeyBag keyBag) throws ScriptException {

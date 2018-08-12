@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.colxj.script;
+package org.lightpaycashj.script;
 
-import org.colxj.core.Utils;
+import org.lightpaycashj.core.Utils;
 import com.google.common.base.Objects;
 
 import javax.annotation.Nullable;
@@ -26,7 +26,7 @@ import java.io.OutputStream;
 import java.util.Arrays;
 
 import static com.google.common.base.Preconditions.checkState;
-import static org.colxj.script.ScriptOpCodes.*;
+import static org.lightpaycashj.script.ScriptOpCodes.*;
 
 /**
  * A script element that is either a data push (signature, pubkey, etc) or a non-push (logic, numeric, etc) operation.

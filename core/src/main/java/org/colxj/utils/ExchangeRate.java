@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
 import java.io.Serializable;
 import java.math.BigInteger;
 
-import org.colxj.core.Coin;
+import org.lightpaycashj.core.Coin;
 
 import com.google.common.base.Objects;
 

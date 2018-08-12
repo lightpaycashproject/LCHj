@@ -24,7 +24,7 @@
 
 package paymentchannels;
 
-option java_package = "org.colxj.protocols.channels";
+option java_package = "org.lightpaycashj.protocols.channels";
 option java_outer_classname = "ServerState";
 
 

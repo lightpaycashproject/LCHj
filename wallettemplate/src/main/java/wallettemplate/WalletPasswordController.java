@@ -15,7 +15,7 @@
 package wallettemplate;
 
 import javafx.application.Platform;
-import org.colxj.crypto.KeyCrypterScrypt;
+import org.lightpaycashj.crypto.KeyCrypterScrypt;
 import com.google.common.primitives.Longs;
 import com.google.protobuf.ByteString;
 import javafx.beans.property.ReadOnlyObjectProperty;

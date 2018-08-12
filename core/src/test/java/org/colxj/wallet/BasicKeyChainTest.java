@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.core.BloomFilter;
-import org.colxj.core.ECKey;
-import org.colxj.core.Utils;
-import org.colxj.crypto.KeyCrypter;
-import org.colxj.crypto.KeyCrypterException;
-import org.colxj.crypto.KeyCrypterScrypt;
-import org.colxj.utils.Threading;
+import org.lightpaycashj.core.BloomFilter;
+import org.lightpaycashj.core.ECKey;
+import org.lightpaycashj.core.Utils;
+import org.lightpaycashj.crypto.KeyCrypter;
+import org.lightpaycashj.crypto.KeyCrypterException;
+import org.lightpaycashj.crypto.KeyCrypterScrypt;
+import org.lightpaycashj.utils.Threading;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 
-import org.colxj.wallet.listeners.AbstractKeyChainEventListener;
+import org.lightpaycashj.wallet.listeners.AbstractKeyChainEventListener;
 import org.junit.Before;
 import org.junit.Test;
 

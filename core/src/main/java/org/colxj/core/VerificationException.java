@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 @SuppressWarnings("serial")
 public class VerificationException extends RuntimeException {

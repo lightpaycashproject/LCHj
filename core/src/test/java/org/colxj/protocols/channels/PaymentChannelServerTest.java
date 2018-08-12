@@ -12,12 +12,12 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.channels;
+package org.lightpaycashj.protocols.channels;
 
-import org.colxj.core.Coin;
-import org.colxj.core.TransactionBroadcaster;
-import org.colxj.core.Utils;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.Coin;
+import org.lightpaycashj.core.TransactionBroadcaster;
+import org.lightpaycashj.core.Utils;
+import org.lightpaycashj.wallet.Wallet;
 import org.bitcoin.paymentchannel.Protos;
 import org.easymock.Capture;
 import org.junit.Before;

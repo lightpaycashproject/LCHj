@@ -12,11 +12,11 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.store.BlockStoreException;
-import org.colxj.store.FullPrunedBlockStore;
-import org.colxj.store.MemoryFullPrunedBlockStore;
+import org.lightpaycashj.store.BlockStoreException;
+import org.lightpaycashj.store.FullPrunedBlockStore;
+import org.lightpaycashj.store.MemoryFullPrunedBlockStore;
 
 /**
  * A MemoryStore implementation of the FullPrunedBlockStoreTest

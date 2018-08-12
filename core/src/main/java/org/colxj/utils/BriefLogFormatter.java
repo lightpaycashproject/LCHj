@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -51,7 +51,7 @@ public class BriefLogFormatter extends Formatter {
 
     public static void initWithSilentBitcoinJ() {
         init();
-        Logger.getLogger("org.colxj").setLevel(Level.SEVERE);
+        Logger.getLogger("org.lightpaycashj").setLevel(Level.SEVERE);
     }
 
     @Override

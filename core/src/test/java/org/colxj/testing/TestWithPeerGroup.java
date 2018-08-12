@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.colxj.testing;
+package org.lightpaycashj.testing;
 
 import com.google.common.base.*;
 import com.google.common.util.concurrent.*;
-import org.colxj.core.*;
-import org.colxj.net.*;
-import org.colxj.store.*;
-import org.colxj.utils.*;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.net.*;
+import org.lightpaycashj.store.*;
+import org.lightpaycashj.utils.*;
 
 import java.net.*;
 import java.util.concurrent.*;

@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
-import org.colxj.core.*;
-import org.colxj.params.TestNet3Params;
-import org.colxj.store.BlockStore;
-import org.colxj.store.MemoryBlockStore;
-import org.colxj.utils.BriefLogFormatter;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.MemoryBlockStore;
+import org.lightpaycashj.utils.BriefLogFormatter;
 
 import java.net.InetAddress;
 import java.util.concurrent.Future;

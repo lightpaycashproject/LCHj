@@ -1,8 +1,8 @@
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
-import org.colxj.core.Address;
-import org.colxj.params.MainNetParams;
-import org.colxj.wallet.DeterministicKeyChain;
+import org.lightpaycashj.core.Address;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.wallet.DeterministicKeyChain;
 import org.junit.Test;
 
 import java.security.SecureRandom;

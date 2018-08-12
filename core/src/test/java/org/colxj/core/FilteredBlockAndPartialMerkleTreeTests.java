@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import com.google.common.collect.*;
-import org.colxj.core.TransactionConfidence.*;
-import org.colxj.store.*;
-import org.colxj.testing.*;
-import org.colxj.wallet.*;
+import org.lightpaycashj.core.TransactionConfidence.*;
+import org.lightpaycashj.store.*;
+import org.lightpaycashj.testing.*;
+import org.lightpaycashj.wallet.*;
 import org.junit.*;
 import org.junit.runner.*;
 import org.junit.runners.*;
@@ -29,7 +29,7 @@ import org.junit.runners.*;
 import java.math.*;
 import java.util.*;
 
-import static org.colxj.core.Utils.*;
+import static org.lightpaycashj.core.Utils.*;
 import static org.junit.Assert.*;
 
 @RunWith(value = Parameterized.class)

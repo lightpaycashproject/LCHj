@@ -13,10 +13,10 @@
  */
 
 /**
- * The core package contains classes for network messages like {@link org.colxj.core.Block} and
- * {@link org.colxj.core.Transaction}, peer connectivity via {@link org.colxj.core.PeerGroup},
+ * The core package contains classes for network messages like {@link org.lightpaycashj.core.Block} and
+ * {@link org.lightpaycashj.core.Transaction}, peer connectivity via {@link org.lightpaycashj.core.PeerGroup},
  * and block chain management.
  * If what you're doing can be described as basic bitcoin tasks, the code is probably found here.
  * To learn more please consult the documentation on the website.
  */
-package org.colxj.core;
+package org.lightpaycashj.core;

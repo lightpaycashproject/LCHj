@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.params;
+package org.lightpaycashj.params;
 
-import org.colxj.core.Block;
+import org.lightpaycashj.core.Block;
 
 import java.math.BigInteger;
 

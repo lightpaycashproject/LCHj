@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.core.*;
-import org.colxj.utils.*;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.utils.*;
 import org.slf4j.*;
 
 import com.google.common.base.Stopwatch;

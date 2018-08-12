@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
-import org.colxj.core.Sha256Hash;
-import org.colxj.core.Utils;
+import org.lightpaycashj.core.Sha256Hash;
+import org.lightpaycashj.core.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -35,7 +35,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import static org.colxj.core.Utils.HEX;
+import static org.lightpaycashj.core.Utils.HEX;
 
 /**
  * A MnemonicCode object may be used to convert between binary seed values and

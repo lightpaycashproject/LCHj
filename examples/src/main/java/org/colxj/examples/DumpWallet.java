@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
 import java.io.File;
 
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.wallet.Wallet;
 
 /**
  * DumpWallet loads a serialized wallet and prints information about what it contains.

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.crypto.*;
+import org.lightpaycashj.crypto.*;
 
 /**
  * Default factory for creating keychains while de-serializing.

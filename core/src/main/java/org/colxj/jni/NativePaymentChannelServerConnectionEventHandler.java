@@ -12,11 +12,11 @@
  * limitations under the License.
  */
 
-package org.colxj.jni;
+package org.lightpaycashj.jni;
 
-import org.colxj.core.*;
-import org.colxj.protocols.channels.PaymentChannelCloseException;
-import org.colxj.protocols.channels.ServerConnectionEventHandler;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.protocols.channels.PaymentChannelCloseException;
+import org.lightpaycashj.protocols.channels.ServerConnectionEventHandler;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.protobuf.ByteString;
 

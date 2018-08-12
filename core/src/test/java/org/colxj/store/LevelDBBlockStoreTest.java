@@ -12,10 +12,10 @@
  * limitations under the License.
  */
 
-package org.colxj.store;
+package org.lightpaycashj.store;
 
-import org.colxj.core.*;
-import org.colxj.params.*;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.params.*;
 import org.junit.*;
 
 import java.io.*;

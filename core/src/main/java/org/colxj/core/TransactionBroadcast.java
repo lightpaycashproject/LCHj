@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import com.google.common.annotations.*;
 import com.google.common.base.*;
 import com.google.common.util.concurrent.*;
-import org.colxj.utils.*;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.utils.*;
+import org.lightpaycashj.wallet.Wallet;
 import org.slf4j.*;
 
 import javax.annotation.*;
@@ -28,7 +28,7 @@ import java.util.*;
 import java.util.concurrent.*;
 
 import static com.google.common.base.Preconditions.checkState;
-import org.colxj.core.listeners.PreMessageReceivedEventListener;
+import org.lightpaycashj.core.listeners.PreMessageReceivedEventListener;
 
 /**
  * Represents a single transaction broadcast that we are performing. A broadcast occurs after a new transaction is created
@@ -274,7 +274,7 @@ public class TransactionBroadcast {
 
     /**
      * Sets the given callback for receiving progress values, which will run on the user thread. See
-     * {@link org.colxj.utils.Threading} for details.  If the broadcast has already started then the callback will
+     * {@link org.lightpaycashj.utils.Threading} for details.  If the broadcast has already started then the callback will
      * be invoked immediately with the current progress.
      */
     public void setProgressCallback(ProgressCallback callback) {

@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.common.collect.ImmutableList;
-import org.colxj.wallet.DeterministicKeyChain;
+import org.lightpaycashj.wallet.DeterministicKeyChain;
 import org.spongycastle.crypto.params.KeyParameter;
 import org.spongycastle.math.ec.ECPoint;
 
@@ -32,7 +32,7 @@ import java.nio.ByteBuffer;
 import java.util.Arrays;
 import java.util.Comparator;
 
-import static org.colxj.core.Utils.HEX;
+import static org.lightpaycashj.core.Utils.HEX;
 import static com.google.common.base.Preconditions.*;
 
 /**
@@ -340,7 +340,7 @@ public class DeterministicKey extends ECKey {
     }
 
     /**
-     * Returns this keys {@link org.colxj.crypto.KeyCrypter} <b>or</b> the keycrypter of its parent key.
+     * Returns this keys {@link org.lightpaycashj.crypto.KeyCrypter} <b>or</b> the keycrypter of its parent key.
      */
     @Override @Nullable
     public KeyCrypter getKeyCrypter() {
@@ -569,7 +569,7 @@ public class DeterministicKey extends ECKey {
 
     /**
      * The creation time of a deterministic key is equal to that of its parent, unless this key is the root of a tree
-     * in which case the time is stored alongside the key as per normal, see {@link org.colxj.core.ECKey#getCreationTimeSeconds()}.
+     * in which case the time is stored alongside the key as per normal, see {@link org.lightpaycashj.core.ECKey#getCreationTimeSeconds()}.
      */
     @Override
     public long getCreationTimeSeconds() {

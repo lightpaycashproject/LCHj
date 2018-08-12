@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.core.*;
-import org.colxj.crypto.*;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.UnitTestParams;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.utils.Threading;
-import org.colxj.wallet.listeners.AbstractKeyChainEventListener;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.crypto.*;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.UnitTestParams;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.utils.Threading;
+import org.lightpaycashj.wallet.listeners.AbstractKeyChainEventListener;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;

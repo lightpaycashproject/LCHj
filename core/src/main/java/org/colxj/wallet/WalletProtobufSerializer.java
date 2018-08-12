@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.core.*;
-import org.colxj.core.TransactionConfidence.ConfidenceType;
-import org.colxj.crypto.KeyCrypter;
-import org.colxj.crypto.KeyCrypterScrypt;
-import org.colxj.script.Script;
-import org.colxj.signers.LocalTransactionSigner;
-import org.colxj.signers.TransactionSigner;
-import org.colxj.utils.ExchangeRate;
-import org.colxj.utils.Fiat;
-import org.colxj.wallet.Protos.Wallet.EncryptionType;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.core.TransactionConfidence.ConfidenceType;
+import org.lightpaycashj.crypto.KeyCrypter;
+import org.lightpaycashj.crypto.KeyCrypterScrypt;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.signers.LocalTransactionSigner;
+import org.lightpaycashj.signers.TransactionSigner;
+import org.lightpaycashj.utils.ExchangeRate;
+import org.lightpaycashj.utils.Fiat;
+import org.lightpaycashj.wallet.Protos.Wallet.EncryptionType;
 
 import com.google.common.collect.Lists;
 import com.google.protobuf.ByteString;
@@ -54,7 +54,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
  * a data interchange format developed by Google with an efficient binary representation, a type safe specification
  * language and compilers that generate code to work with those data structures for many languages. Protocol buffers
  * can have their format evolved over time: conceptually they represent data using (tag, length, value) tuples. The
- * format is defined by the <tt>wallet.proto</tt> file in the colxj source distribution.<p>
+ * format is defined by the <tt>wallet.proto</tt> file in the lightpaycashj source distribution.<p>
  *
  * This class is used through its static methods. The most common operations are writeWallet and readWallet, which do
  * the obvious operations on Output/InputStreams. You can use a {@link java.io.ByteArrayInputStream} and equivalent
@@ -679,7 +679,7 @@ public class WalletProtobufSerializer {
     }
 
     private WalletTransaction connectTransactionOutputs(final NetworkParameters params,
-                                                        final org.colxj.wallet.Protos.Transaction txProto) throws UnreadableWalletException {
+                                                        final org.lightpaycashj.wallet.Protos.Transaction txProto) throws UnreadableWalletException {
         Transaction tx = txMap.get(txProto.getHash());
         final WalletTransaction.Pool pool;
         switch (txProto.getPool()) {

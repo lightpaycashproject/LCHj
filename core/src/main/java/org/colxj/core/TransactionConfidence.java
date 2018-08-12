@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import com.google.common.collect.*;
 import com.google.common.util.concurrent.*;
-import org.colxj.utils.*;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.utils.*;
+import org.lightpaycashj.wallet.Wallet;
 
 import javax.annotation.*;
 import java.util.*;
@@ -55,9 +55,9 @@ import static com.google.common.base.Preconditions.checkState;
  * <p>Alternatively, you may know that the transaction is "dead", that is, one or more of its inputs have
  * been double spent and will never confirm unless there is another re-org.</p>
  *
- * <p>TransactionConfidence is updated via the {@link org.colxj.core.TransactionConfidence#incrementDepthInBlocks()}
+ * <p>TransactionConfidence is updated via the {@link org.lightpaycashj.core.TransactionConfidence#incrementDepthInBlocks()}
  * method to ensure the block depth is up to date.</p>
- * To make a copy that won't be changed, use {@link org.colxj.core.TransactionConfidence#duplicate()}.
+ * To make a copy that won't be changed, use {@link org.lightpaycashj.core.TransactionConfidence#duplicate()}.
  */
 public class TransactionConfidence {
 
@@ -87,7 +87,7 @@ public class TransactionConfidence {
          * announced and is considered valid by the network. A pending transaction will be announced if the containing
          * wallet has been attached to a live {@link PeerGroup} using {@link PeerGroup#addWallet(Wallet)}.
          * You can estimate how likely the transaction is to be included by connecting to a bunch of nodes then measuring
-         * how many announce it, using {@link org.colxj.core.TransactionConfidence#numBroadcastPeers()}.
+         * how many announce it, using {@link org.lightpaycashj.core.TransactionConfidence#numBroadcastPeers()}.
          * Or if you saw it from a trusted peer, you can assume it's valid and will get mined sooner or later as well.
          */
         PENDING(2),
@@ -164,7 +164,7 @@ public class TransactionConfidence {
         /** An enum that describes why a transaction confidence listener is being invoked (i.e. the class of change). */
         enum ChangeReason {
             /**
-             * Occurs when the type returned by {@link org.colxj.core.TransactionConfidence#getConfidenceType()}
+             * Occurs when the type returned by {@link org.lightpaycashj.core.TransactionConfidence#getConfidenceType()}
              * has changed. For example, if a PENDING transaction changes to BUILDING or DEAD, then this reason will
              * be given. It's a high level summary.
              */
@@ -184,7 +184,7 @@ public class TransactionConfidence {
              */
             SEEN_PEERS,
             /**
-             * Occurs when the type returned by {@link org.colxj.core.TransactionConfidence#getIXType()}
+             * Occurs when the type returned by {@link org.lightpaycashj.core.TransactionConfidence#getIXType()}
              * has changed. For example, if a IX_REQUEST transaction changes to IX_LOCKED, then this reason will
              * be given.
              */
@@ -473,7 +473,7 @@ public class TransactionConfidence {
     /**
      * The source of a transaction tries to identify where it came from originally. For instance, did we download it
      * from the peer to peer network, or make it ourselves, or receive it via Bluetooth, or import it from another app,
-     * and so on. This information is useful for {@link org.colxj.wallet.CoinSelector} implementations to risk analyze
+     * and so on. This information is useful for {@link org.lightpaycashj.wallet.CoinSelector} implementations to risk analyze
      * transactions and decide when to spend them.
      */
     public synchronized Source getSource() {
@@ -483,7 +483,7 @@ public class TransactionConfidence {
     /**
      * The source of a transaction tries to identify where it came from originally. For instance, did we download it
      * from the peer to peer network, or make it ourselves, or receive it via Bluetooth, or import it from another app,
-     * and so on. This information is useful for {@link org.colxj.wallet.CoinSelector} implementations to risk analyze
+     * and so on. This information is useful for {@link org.lightpaycashj.wallet.CoinSelector} implementations to risk analyze
      * transactions and decide when to spend them.
      */
     public synchronized void setSource(Source source) {

@@ -1,12 +1,12 @@
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import com.google.common.util.concurrent.ListenableFuture;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.TestNet2Params;
-import org.colxj.store.BlockStore;
-import org.colxj.store.MemoryBlockStore;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.TestNet2Params;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.MemoryBlockStore;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.wallet.Wallet;
 import org.junit.*;
 import org.junit.rules.ExpectedException;
 

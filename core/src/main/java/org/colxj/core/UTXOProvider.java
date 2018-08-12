@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import java.util.List;
 
@@ -22,7 +22,7 @@ import java.util.List;
  * A UTXOProvider encapsulates functionality for returning unspent transaction outputs,
  * for use by the wallet or other code that crafts spends.
  *
- * <p>A {@link org.colxj.store.FullPrunedBlockStore} is an internal implementation within colxj.</p>
+ * <p>A {@link org.lightpaycashj.store.FullPrunedBlockStore} is an internal implementation within lightpaycashj.</p>
  */
 public interface UTXOProvider {
 

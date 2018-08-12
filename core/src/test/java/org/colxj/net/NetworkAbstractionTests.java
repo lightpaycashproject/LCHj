@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.colxj.net;
+package org.lightpaycashj.net;
 
-import org.colxj.core.Utils;
+import org.lightpaycashj.core.Utils;
 import com.google.common.util.concurrent.SettableFuture;
 import com.google.protobuf.ByteString;
 import org.bitcoin.paymentchannel.Protos;

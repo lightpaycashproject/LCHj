@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 /**
  * This exception is used by the TransactionBroadcast class to indicate that a broadcast

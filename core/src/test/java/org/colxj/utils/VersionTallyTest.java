@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
-import org.colxj.core.BlockChain;
-import org.colxj.core.Context;
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.StoredBlock;
-import org.colxj.params.UnitTestParams;
-import org.colxj.store.BlockStore;
-import org.colxj.store.BlockStoreException;
-import org.colxj.store.MemoryBlockStore;
-import org.colxj.testing.FakeTxBuilder;
+import org.lightpaycashj.core.BlockChain;
+import org.lightpaycashj.core.Context;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.StoredBlock;
+import org.lightpaycashj.params.UnitTestParams;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.BlockStoreException;
+import org.lightpaycashj.store.MemoryBlockStore;
+import org.lightpaycashj.testing.FakeTxBuilder;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;

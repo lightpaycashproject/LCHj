@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
@@ -24,18 +24,18 @@ import java.math.BigInteger;
 import java.util.Date;
 
 import org.bitcoin.protocols.payments.Protos.PaymentDetails;
-import org.colxj.core.Address;
-import org.colxj.core.Coin;
-import org.colxj.core.Context;
-import org.colxj.core.ECKey;
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.Transaction;
-import org.colxj.core.TransactionOutput;
-import org.colxj.script.Script;
-import org.colxj.script.ScriptBuilder;
-import org.colxj.utils.ExchangeRate;
-import org.colxj.wallet.KeyChain.KeyPurpose;
-import org.colxj.wallet.Wallet.MissingSigsMode;
+import org.lightpaycashj.core.Address;
+import org.lightpaycashj.core.Coin;
+import org.lightpaycashj.core.Context;
+import org.lightpaycashj.core.ECKey;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.Transaction;
+import org.lightpaycashj.core.TransactionOutput;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.script.ScriptBuilder;
+import org.lightpaycashj.utils.ExchangeRate;
+import org.lightpaycashj.wallet.KeyChain.KeyPurpose;
+import org.lightpaycashj.wallet.Wallet.MissingSigsMode;
 import org.spongycastle.crypto.params.KeyParameter;
 
 import com.google.common.base.MoreObjects;
@@ -65,7 +65,7 @@ public class SendRequest {
 
     /**
      * When emptyWallet is set, all coins selected by the coin selector are sent to the first output in tx
-     * (its value is ignored and set to {@link org.colxj.wallet.Wallet#getBalance()} - the fees required
+     * (its value is ignored and set to {@link org.lightpaycashj.wallet.Wallet#getBalance()} - the fees required
      * for the transaction). Any additional outputs are removed.
      */
     public boolean emptyWallet = false;
@@ -115,7 +115,7 @@ public class SendRequest {
     public KeyParameter aesKey = null;
 
     /**
-     * If not null, the {@link org.colxj.wallet.CoinSelector} to use instead of the wallets default. Coin selectors are
+     * If not null, the {@link org.lightpaycashj.wallet.CoinSelector} to use instead of the wallets default. Coin selectors are
      * responsible for choosing which transaction outputs (coins) in a wallet to use given the desired send value
      * amount.
      */

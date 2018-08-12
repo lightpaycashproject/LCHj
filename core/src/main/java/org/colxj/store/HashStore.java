@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.store;
+package org.lightpaycashj.store;
 
-import org.colxj.core.*;
-import org.colxj.utils.Threading;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.utils.Threading;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

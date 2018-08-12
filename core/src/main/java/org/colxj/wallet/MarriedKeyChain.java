@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 import com.google.protobuf.ByteString;
 
-import org.colxj.core.BloomFilter;
-import org.colxj.core.ECKey;
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.Utils;
-import org.colxj.crypto.DeterministicKey;
-import org.colxj.crypto.KeyCrypter;
-import org.colxj.script.Script;
-import org.colxj.script.ScriptBuilder;
+import org.lightpaycashj.core.BloomFilter;
+import org.lightpaycashj.core.ECKey;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.Utils;
+import org.lightpaycashj.crypto.DeterministicKey;
+import org.lightpaycashj.crypto.KeyCrypter;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.script.ScriptBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

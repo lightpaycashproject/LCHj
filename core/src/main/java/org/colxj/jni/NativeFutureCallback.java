@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.jni;
+package org.lightpaycashj.jni;
 
 import com.google.common.util.concurrent.FutureCallback;
 

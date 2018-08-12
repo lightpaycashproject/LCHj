@@ -12,16 +12,16 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
-import org.colxj.core.*;
-import org.colxj.kits.WalletAppKit;
-import org.colxj.params.TestNet3Params;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.Wallet.BalanceType;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.kits.WalletAppKit;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.Wallet.BalanceType;
 
 import java.io.File;
 

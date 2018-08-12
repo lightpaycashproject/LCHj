@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.net;
+package org.lightpaycashj.net;
 
-import org.colxj.core.Message;
-import org.colxj.utils.Threading;
+import org.lightpaycashj.core.Message;
+import org.lightpaycashj.utils.Threading;
 import com.google.common.base.Throwables;
 import org.slf4j.LoggerFactory;
 

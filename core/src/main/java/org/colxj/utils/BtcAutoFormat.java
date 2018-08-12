@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
-import static org.colxj.core.Coin.SMALLEST_UNIT_EXPONENT;
+import static org.lightpaycashj.core.Coin.SMALLEST_UNIT_EXPONENT;
 import com.google.common.collect.ImmutableList;
 
 import java.math.BigInteger;
@@ -54,7 +54,7 @@ import java.util.Locale;
  * @see          java.text.NumberFormat
  * @see          java.text.DecimalFormat
  * @see          DecimalFormatSymbols
- * @see          org.colxj.core.Coin
+ * @see          org.lightpaycashj.core.Coin
  */
 
 public final class BtcAutoFormat extends BtcFormat {

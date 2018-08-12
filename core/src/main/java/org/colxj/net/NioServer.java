@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.net;
+package org.lightpaycashj.net;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

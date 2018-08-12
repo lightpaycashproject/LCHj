@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.colxj.tools;
+package org.lightpaycashj.tools;
 
-import org.colxj.core.listeners.NewBestBlockListener;
-import org.colxj.core.*;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.RegTestParams;
-import org.colxj.params.TestNet3Params;
-import org.colxj.store.BlockStore;
-import org.colxj.store.MemoryBlockStore;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.utils.Threading;
+import org.lightpaycashj.core.listeners.NewBestBlockListener;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.RegTestParams;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.MemoryBlockStore;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.utils.Threading;
 import com.google.common.base.Charsets;
 import com.google.common.io.Resources;
 import joptsimple.OptionParser;
@@ -109,7 +109,7 @@ public class BuildCheckpoints {
         // Sorted map of block height to StoredBlock object.
         final TreeMap<Integer, StoredBlock> checkpoints = new TreeMap<Integer, StoredBlock>();
 
-        // Configure colxj to fetch only headers, not save them to disk, connect to a local fully synced/validated
+        // Configure lightpaycashj to fetch only headers, not save them to disk, connect to a local fully synced/validated
         // node and to save block headers that are on interval boundaries, as long as they are <1 month old.
 
         //Context.getOrCreate(params).initPivx(true, false);

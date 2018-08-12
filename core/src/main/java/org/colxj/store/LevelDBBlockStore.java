@@ -12,9 +12,9 @@
  * limitations under the License.
  */
 
-package org.colxj.store;
+package org.lightpaycashj.store;
 
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 import org.fusesource.leveldbjni.*;
 import org.iq80.leveldb.*;
 

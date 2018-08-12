@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.channels;
+package org.lightpaycashj.protocols.channels;
 
 import com.google.common.collect.ImmutableMap;
-import org.colxj.core.*;
-import org.colxj.protocols.channels.PaymentChannelCloseException.CloseReason;
-import org.colxj.utils.Threading;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.protocols.channels.PaymentChannelCloseException.CloseReason;
+import org.lightpaycashj.utils.Threading;
+import org.lightpaycashj.wallet.Wallet;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;

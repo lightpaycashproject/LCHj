@@ -15,20 +15,20 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import org.colxj.core.Coin;
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.Sha256Hash;
-import org.colxj.core.VerificationException;
-import org.colxj.kits.WalletAppKit;
-import org.colxj.params.RegTestParams;
-import org.colxj.protocols.channels.*;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.wallet.WalletExtension;
+import org.lightpaycashj.core.Coin;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.Sha256Hash;
+import org.lightpaycashj.core.VerificationException;
+import org.lightpaycashj.kits.WalletAppKit;
+import org.lightpaycashj.params.RegTestParams;
+import org.lightpaycashj.protocols.channels.*;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.wallet.WalletExtension;
 
 import com.google.common.collect.ImmutableList;
 

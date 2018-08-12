@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import com.google.common.base.*;
 import com.google.common.collect.*;
 import com.google.common.util.concurrent.*;
-import org.colxj.core.listeners.*;
-import org.colxj.net.*;
-import org.colxj.params.*;
-import org.colxj.store.*;
-import org.colxj.utils.*;
+import org.lightpaycashj.core.listeners.*;
+import org.lightpaycashj.net.*;
+import org.lightpaycashj.params.*;
+import org.lightpaycashj.store.*;
+import org.lightpaycashj.utils.*;
 import org.slf4j.*;
 
 import java.io.*;
@@ -302,7 +302,7 @@ public class BitcoindComparisonTool {
                 bitcoind.ping().get();
                 if (!chain.getChainHead().getHeader().getHash().equals(bitcoindChainHead)) {
                     rulesSinceFirstFail++;
-                    log.error("ERROR: bitcoind and colxj acceptance differs on block \"" + block.ruleName + "\"");
+                    log.error("ERROR: bitcoind and lightpaycashj acceptance differs on block \"" + block.ruleName + "\"");
                 }
                 if (block.sendOnce)
                     preloadedBlocks.remove(nextBlock.getHash());

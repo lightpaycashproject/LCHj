@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.script.Script;
-import org.colxj.wallet.WalletTransaction;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.wallet.WalletTransaction;
 
 import java.util.Map;
 
 /**
- * This interface is used to abstract the {@link org.colxj.wallet.Wallet} and the {@link org.colxj.core.Transaction}
+ * This interface is used to abstract the {@link org.lightpaycashj.wallet.Wallet} and the {@link org.lightpaycashj.core.Transaction}
  */
 public interface TransactionBag {
     /** Returns true if this wallet contains a public key which hashes to the given hash. */

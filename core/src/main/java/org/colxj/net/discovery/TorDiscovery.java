@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.colxj.net.discovery;
+package org.lightpaycashj.net.discovery;
 
 import com.google.common.collect.*;
 import com.google.common.util.concurrent.*;
@@ -23,8 +23,8 @@ import com.subgraph.orchid.*;
 import com.subgraph.orchid.circuits.path.*;
 import com.subgraph.orchid.data.*;
 import com.subgraph.orchid.data.exitpolicy.*;
-import org.colxj.core.*;
-import org.colxj.utils.*;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.utils.*;
 import org.slf4j.*;
 
 import java.net.*;

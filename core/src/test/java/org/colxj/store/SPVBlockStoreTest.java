@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.colxj.store;
+package org.lightpaycashj.store;
 
-import org.colxj.core.Address;
-import org.colxj.core.ECKey;
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.StoredBlock;
-import org.colxj.params.UnitTestParams;
+import org.lightpaycashj.core.Address;
+import org.lightpaycashj.core.ECKey;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.StoredBlock;
+import org.lightpaycashj.params.UnitTestParams;
 import org.junit.Test;
 
 import java.io.File;

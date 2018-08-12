@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.core.ECKey;
+import org.lightpaycashj.core.ECKey;
 
 import javax.annotation.Nullable;
 

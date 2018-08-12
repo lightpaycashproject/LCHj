@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
-import org.colxj.core.CoinDefinition;
-import org.colxj.utils.BtcAutoFormat.Style;
-import static org.colxj.utils.BtcAutoFormat.Style.*;
+import org.lightpaycashj.core.CoinDefinition;
+import org.lightpaycashj.utils.BtcAutoFormat.Style;
+import static org.lightpaycashj.utils.BtcAutoFormat.Style.*;
 
-import org.colxj.core.Coin;
+import org.lightpaycashj.core.Coin;
 import com.google.common.base.Objects;
 import com.google.common.collect.ImmutableList;
 import static com.google.common.base.Preconditions.checkArgument;
@@ -262,7 +262,7 @@ import java.util.regex.Pattern;
  * <h3>Formatting</h3>
  *
  * <p>You format a Bitcoin monetary value by passing it to the {@link BtcFormat#format(Object)}
- * method.  This argument can be either a {@link org.colxj.core.Coin}-type object or a
+ * method.  This argument can be either a {@link org.lightpaycashj.core.Coin}-type object or a
  * numerical object such as {@link java.lang.Long} or {@link java.math.BigDecimal}.
  * Integer-based types such as {@link java.math.BigInteger} are interpreted as representing a
  * number of satoshis, while a {@link java.math.BigDecimal} is interpreted as representing a
@@ -465,7 +465,7 @@ import java.util.regex.Pattern;
  * @see          java.text.DecimalFormat
  * @see          java.text.DecimalFormatSymbols
  * @see          java.text.FieldPosition
- * @see          org.colxj.core.Coin
+ * @see          org.lightpaycashj.core.Coin
  */
 
 public abstract class BtcFormat extends Format {
@@ -1302,7 +1302,7 @@ public abstract class BtcFormat extends Format {
 
     /**
       * Parse a <code>String</code> representation of a Bitcoin monetary value.  Returns a
-      * {@link org.colxj.core.Coin} object that represents the parsed value.
+      * {@link org.lightpaycashj.core.Coin} object that represents the parsed value.
       * @see java.text.NumberFormat */
     @Override
     public final Object parseObject(String source, ParsePosition pos) { return parse(source, pos); }

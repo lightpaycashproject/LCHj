@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.params.MainNetParams;
-import org.colxj.params.Networks;
-import org.colxj.params.TestNet3Params;
-import org.colxj.script.Script;
-import org.colxj.script.ScriptBuilder;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.Networks;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.script.ScriptBuilder;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
@@ -31,7 +31,7 @@ import java.io.ObjectOutputStream;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.colxj.core.Utils.HEX;
+import static org.lightpaycashj.core.Utils.HEX;
 import static org.junit.Assert.*;
 
 public class AddressTest {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
 import java.util.List;
 import java.util.concurrent.Executor;

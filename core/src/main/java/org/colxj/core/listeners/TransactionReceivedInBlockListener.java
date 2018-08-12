@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.colxj.core.listeners;
+package org.lightpaycashj.core.listeners;
 
-import org.colxj.core.BlockChain;
-import org.colxj.core.Sha256Hash;
-import org.colxj.core.StoredBlock;
-import org.colxj.core.Transaction;
-import org.colxj.core.VerificationException;
+import org.lightpaycashj.core.BlockChain;
+import org.lightpaycashj.core.Sha256Hash;
+import org.lightpaycashj.core.StoredBlock;
+import org.lightpaycashj.core.Transaction;
+import org.lightpaycashj.core.VerificationException;
 
 /**
  * Listener interface for when we receive a new block that contains a relevant

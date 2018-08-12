@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.colxj.jni;
+package org.lightpaycashj.jni;
 
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.listeners.WalletCoinsSentEventListener;
-import org.colxj.core.Coin;
-import org.colxj.core.Transaction;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.listeners.WalletCoinsSentEventListener;
+import org.lightpaycashj.core.Coin;
+import org.lightpaycashj.core.Transaction;
 
 /**
  * An event listener that relays events to a native C++ object. A pointer to that object is stored in

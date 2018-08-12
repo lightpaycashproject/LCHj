@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.colxj.jni;
+package org.lightpaycashj.jni;
 
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 
 import java.util.List;
-import org.colxj.core.listeners.NewBestBlockListener;
-import org.colxj.core.listeners.ReorganizeListener;
-import org.colxj.core.listeners.TransactionReceivedInBlockListener;
+import org.lightpaycashj.core.listeners.NewBestBlockListener;
+import org.lightpaycashj.core.listeners.ReorganizeListener;
+import org.lightpaycashj.core.listeners.TransactionReceivedInBlockListener;
 
 /**
  * An event listener that relays events to a native C++ object. A pointer to that object is stored in

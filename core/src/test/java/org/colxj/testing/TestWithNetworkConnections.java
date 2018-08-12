@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.colxj.testing;
+package org.lightpaycashj.testing;
 
-import org.colxj.core.listeners.PeerDisconnectedEventListener;
-import org.colxj.core.listeners.PreMessageReceivedEventListener;
-import org.colxj.core.*;
-import org.colxj.net.*;
-import org.colxj.params.UnitTestParams;
-import org.colxj.store.BlockStore;
-import org.colxj.store.MemoryBlockStore;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.utils.Threading;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.listeners.PeerDisconnectedEventListener;
+import org.lightpaycashj.core.listeners.PreMessageReceivedEventListener;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.net.*;
+import org.lightpaycashj.params.UnitTestParams;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.MemoryBlockStore;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.utils.Threading;
+import org.lightpaycashj.wallet.Wallet;
 
 import com.google.common.util.concurrent.SettableFuture;
 

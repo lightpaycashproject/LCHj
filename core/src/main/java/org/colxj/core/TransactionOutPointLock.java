@@ -1,4 +1,4 @@
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import java.util.Collection;
 import java.util.HashMap;

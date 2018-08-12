@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.colxj.net.discovery;
+package org.lightpaycashj.net.discovery;
 
-import org.colxj.core.*;
-import org.colxj.utils.*;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.utils.*;
 
 import java.net.*;
 import java.util.*;

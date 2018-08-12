@@ -1,7 +1,7 @@
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.script.Script;
-import org.colxj.script.ScriptBuilder;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.script.ScriptBuilder;
 import org.darkcoinj.DarkSendSigner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

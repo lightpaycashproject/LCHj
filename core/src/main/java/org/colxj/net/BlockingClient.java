@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.net;
+package org.lightpaycashj.net;
 
 import com.google.common.util.concurrent.*;
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 import org.slf4j.*;
 
 import javax.annotation.*;

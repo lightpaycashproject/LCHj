@@ -15,22 +15,22 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import org.colxj.core.*;
-import org.colxj.kits.WalletAppKit;
-import org.colxj.params.RegTestParams;
-import org.colxj.protocols.channels.PaymentChannelClient;
-import org.colxj.protocols.channels.PaymentChannelClientConnection;
-import org.colxj.protocols.channels.StoredPaymentChannelClientStates;
-import org.colxj.protocols.channels.ValueOutOfRangeException;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.utils.Threading;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.WalletExtension;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.kits.WalletAppKit;
+import org.lightpaycashj.params.RegTestParams;
+import org.lightpaycashj.protocols.channels.PaymentChannelClient;
+import org.lightpaycashj.protocols.channels.PaymentChannelClientConnection;
+import org.lightpaycashj.protocols.channels.StoredPaymentChannelClientStates;
+import org.lightpaycashj.protocols.channels.ValueOutOfRangeException;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.utils.Threading;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.WalletExtension;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.util.concurrent.FutureCallback;
@@ -46,7 +46,7 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
 
-import static org.colxj.core.Coin.CENT;
+import static org.lightpaycashj.core.Coin.CENT;
 
 /**
  * Simple client that connects to the given host, opens a channel, and pays one cent.

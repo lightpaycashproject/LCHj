@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.colxj.store;
+package org.lightpaycashj.store;
 
 import sun.misc.*;
 import sun.nio.ch.*;

@@ -13,7 +13,7 @@
  */
 
 /**
- * High level wrapper APIs around the colxj building blocks. WalletAppKit is suitable for many different types of
+ * High level wrapper APIs around the lightpaycashj building blocks. WalletAppKit is suitable for many different types of
  * apps that require an SPV wallet.
  */
-package org.colxj.kits;
+package org.lightpaycashj.kits;

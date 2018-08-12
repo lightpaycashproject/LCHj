@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.colxj.net.discovery;
+package org.lightpaycashj.net.discovery;
 
-import org.colxj.params.MainNetParams;
+import org.lightpaycashj.params.MainNetParams;
 import org.junit.Test;
 
 import java.net.InetSocketAddress;

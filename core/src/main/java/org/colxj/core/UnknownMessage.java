@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 /**
  * <p>Instances of this class are not safe for use by multiple threads.</p>

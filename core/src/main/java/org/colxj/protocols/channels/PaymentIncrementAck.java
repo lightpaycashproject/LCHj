@@ -12,9 +12,9 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.channels;
+package org.lightpaycashj.protocols.channels;
 
-import org.colxj.core.Coin;
+import org.lightpaycashj.core.Coin;
 import com.google.protobuf.ByteString;
 
 import javax.annotation.Nullable;

@@ -1,4 +1,4 @@
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 /**
  * Created by Eric on 2/21/2016.

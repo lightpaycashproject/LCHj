@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import com.google.common.base.Objects;
-import org.colxj.net.discovery.HttpDiscovery;
-import org.colxj.params.*;
-import org.colxj.script.Script;
-import org.colxj.script.ScriptBuilder;
-import org.colxj.script.ScriptChunk;
-import org.colxj.script.ScriptOpCodes;
-import org.colxj.store.BlockStore;
-import org.colxj.store.BlockStoreException;
-import org.colxj.utils.MonetaryFormat;
+import org.lightpaycashj.net.discovery.HttpDiscovery;
+import org.lightpaycashj.params.*;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.script.ScriptBuilder;
+import org.lightpaycashj.script.ScriptChunk;
+import org.lightpaycashj.script.ScriptOpCodes;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.BlockStoreException;
+import org.lightpaycashj.utils.MonetaryFormat;
 
 import javax.annotation.Nullable;
 import java.math.BigInteger;
@@ -34,8 +34,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.EnumSet;
 
-import static org.colxj.core.Coin.*;
-import org.colxj.utils.VersionTally;
+import static org.lightpaycashj.core.Coin.*;
+import org.lightpaycashj.utils.VersionTally;
 
 /**
  * <p>NetworkParameters contains the data needed for working with an instantiation of a Bitcoin chain.</p>
@@ -312,7 +312,7 @@ public abstract class NetworkParameters {
         return addrSeeds;
     }
 
-    /** Returns discovery objects for seeds implementing the Cartographer protocol. See {@link org.colxj.net.discovery.HttpDiscovery} for more info. */
+    /** Returns discovery objects for seeds implementing the Cartographer protocol. See {@link org.lightpaycashj.net.discovery.HttpDiscovery} for more info. */
     public HttpDiscovery.Details[] getHttpSeeds() {
         return httpSeeds;
     }
@@ -343,7 +343,7 @@ public abstract class NetworkParameters {
     }
 
     /**
-     * First byte of a base58 encoded address. See {@link org.colxj.core.Address}. This is the same as acceptableAddressCodes[0] and
+     * First byte of a base58 encoded address. See {@link org.lightpaycashj.core.Address}. This is the same as acceptableAddressCodes[0] and
      * is the one used for "normal" addresses. Other types of address may be encountered with version codes found in
      * the acceptableAddressCodes array.
      */
@@ -358,7 +358,7 @@ public abstract class NetworkParameters {
         return p2shHeader;
     }
 
-    /** First byte of a base58 encoded dumped private key. See {@link org.colxj.core.DumpedPrivateKey}. */
+    /** First byte of a base58 encoded dumped private key. See {@link org.lightpaycashj.core.DumpedPrivateKey}. */
     public int getDumpedPrivateKeyHeader() {
         return dumpedPrivateKeyHeader;
     }
@@ -399,7 +399,7 @@ public abstract class NetworkParameters {
     }
 
     /**
-     * The key used to sign {@link org.colxj.core.AlertMessage}s. You can use {@link org.colxj.core.ECKey#verify(byte[], byte[], byte[])} to verify
+     * The key used to sign {@link org.lightpaycashj.core.AlertMessage}s. You can use {@link org.lightpaycashj.core.ECKey#verify(byte[], byte[], byte[])} to verify
      * signatures using it.
      */
     public byte[] getAlertSigningKey() {

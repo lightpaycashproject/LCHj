@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.store;
+package org.lightpaycashj.store;
 
-import org.colxj.core.NetworkParameters;
+import org.lightpaycashj.core.NetworkParameters;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,7 +24,7 @@ import java.util.List;
 
 /**
  * <p>A full pruned block store using the MySQL database engine. As an added bonus an address index is calculated,
- * so you can use {@link #calculateBalanceForAddress(org.colxj.core.Address)} to quickly look up
+ * so you can use {@link #calculateBalanceForAddress(org.lightpaycashj.core.Address)} to quickly look up
  * the quantity of bitcoins controlled by that address.</p>
  */
 public class MySQLFullPrunedBlockStore extends DatabaseFullPrunedBlockStore {

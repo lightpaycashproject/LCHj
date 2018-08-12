@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.colxj.protocols.channels;
+package org.lightpaycashj.protocols.channels;
 
-import org.colxj.core.*;
-import org.colxj.testing.TestWithWallet;
-import org.colxj.utils.Threading;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.WalletExtension;
-import org.colxj.wallet.WalletFiles;
-import org.colxj.wallet.WalletProtobufSerializer;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.testing.TestWithWallet;
+import org.lightpaycashj.utils.Threading;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.WalletExtension;
+import org.lightpaycashj.wallet.WalletFiles;
+import org.lightpaycashj.wallet.WalletProtobufSerializer;
 
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
@@ -47,9 +47,9 @@ import java.util.Collection;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import static org.colxj.core.Coin.*;
-import static org.colxj.protocols.channels.PaymentChannelCloseException.CloseReason;
-import static org.colxj.testing.FakeTxBuilder.createFakeBlock;
+import static org.lightpaycashj.core.Coin.*;
+import static org.lightpaycashj.protocols.channels.PaymentChannelCloseException.CloseReason;
+import static org.lightpaycashj.testing.FakeTxBuilder.createFakeBlock;
 import static org.bitcoin.paymentchannel.Protos.TwoWayChannelMessage.MessageType;
 import static org.junit.Assert.*;
 
@@ -560,7 +560,7 @@ public class ChannelConnectionTest extends TestWithWallet {
     private static Wallet roundTripClientWallet(Wallet wallet) throws Exception {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         new WalletProtobufSerializer().writeWallet(wallet, bos);
-        org.colxj.wallet.Protos.Wallet proto = WalletProtobufSerializer.parseToProto(new ByteArrayInputStream(bos.toByteArray()));
+        org.lightpaycashj.wallet.Protos.Wallet proto = WalletProtobufSerializer.parseToProto(new ByteArrayInputStream(bos.toByteArray()));
         StoredPaymentChannelClientStates state = new StoredPaymentChannelClientStates(null, failBroadcaster);
         return new WalletProtobufSerializer().readWallet(wallet.getParams(), new WalletExtension[] { state }, proto);
     }
@@ -569,7 +569,7 @@ public class ChannelConnectionTest extends TestWithWallet {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         new WalletProtobufSerializer().writeWallet(wallet, bos);
         StoredPaymentChannelServerStates state = new StoredPaymentChannelServerStates(null, failBroadcaster);
-        org.colxj.wallet.Protos.Wallet proto = WalletProtobufSerializer.parseToProto(new ByteArrayInputStream(bos.toByteArray()));
+        org.lightpaycashj.wallet.Protos.Wallet proto = WalletProtobufSerializer.parseToProto(new ByteArrayInputStream(bos.toByteArray()));
         return new WalletProtobufSerializer().readWallet(wallet.getParams(), new WalletExtension[] { state }, proto);
     }
 

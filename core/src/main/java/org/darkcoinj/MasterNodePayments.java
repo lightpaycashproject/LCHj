@@ -1,6 +1,6 @@
 package org.darkcoinj;
 
-import org.colxj.core.MasterNodePaymentWinner;
+import org.lightpaycashj.core.MasterNodePaymentWinner;
 
 import java.util.ArrayList;
 

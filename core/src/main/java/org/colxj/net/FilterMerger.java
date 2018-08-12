@@ -12,11 +12,11 @@
  * limitations under the License.
  */
 
-package org.colxj.net;
+package org.lightpaycashj.net;
 
 import com.google.common.collect.Lists;
-import org.colxj.core.BloomFilter;
-import org.colxj.core.PeerFilterProvider;
+import org.lightpaycashj.core.BloomFilter;
+import org.lightpaycashj.core.PeerFilterProvider;
 import com.google.common.collect.ImmutableList;
 
 import java.util.LinkedList;
@@ -24,9 +24,9 @@ import java.util.LinkedList;
 // This code is unit tested by the PeerGroup tests.
 
 /**
- * <p>A reusable object that will calculate, given a list of {@link org.colxj.core.PeerFilterProvider}s, a merged
- * {@link org.colxj.core.BloomFilter} and earliest key time for all of them.
- * Used by the {@link org.colxj.core.PeerGroup} class internally.</p>
+ * <p>A reusable object that will calculate, given a list of {@link org.lightpaycashj.core.PeerFilterProvider}s, a merged
+ * {@link org.lightpaycashj.core.BloomFilter} and earliest key time for all of them.
+ * Used by the {@link org.lightpaycashj.core.PeerGroup} class internally.</p>
  *
  * <p>Thread safety: threading here can be complicated. Each filter provider is given a begin event, which may acquire
  * a lock (and is guaranteed to receive an end event). This class is mostly thread unsafe and is meant to be used from a

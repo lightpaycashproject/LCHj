@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.params;
+package org.lightpaycashj.params;
 
-import org.colxj.core.NetworkParameters;
+import org.lightpaycashj.core.NetworkParameters;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Lists;
 

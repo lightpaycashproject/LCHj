@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import com.google.common.base.Objects;
 import com.google.common.base.Preconditions;

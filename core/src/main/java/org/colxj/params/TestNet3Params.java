@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package org.colxj.params;
+package org.lightpaycashj.params;
 
-import org.colxj.core.CoinDefinition;
+import org.lightpaycashj.core.CoinDefinition;
 
 import java.math.BigInteger;
 import java.util.Date;
 
-import org.colxj.core.Block;
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.StoredBlock;
-import org.colxj.core.VerificationException;
-import org.colxj.store.BlockStore;
-import org.colxj.store.BlockStoreException;
+import org.lightpaycashj.core.Block;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.StoredBlock;
+import org.lightpaycashj.core.VerificationException;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.BlockStoreException;
 
 import static com.google.common.base.Preconditions.checkState;
 

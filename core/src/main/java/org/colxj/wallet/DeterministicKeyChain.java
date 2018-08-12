@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
 import com.google.common.collect.Lists;
-import org.colxj.core.BloomFilter;
-import org.colxj.core.ECKey;
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.Utils;
-import org.colxj.crypto.*;
-import org.colxj.script.Script;
-import org.colxj.utils.Threading;
-import org.colxj.wallet.listeners.KeyChainEventListener;
+import org.lightpaycashj.core.BloomFilter;
+import org.lightpaycashj.core.ECKey;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.Utils;
+import org.lightpaycashj.crypto.*;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.utils.Threading;
+import org.lightpaycashj.wallet.listeners.KeyChainEventListener;
 
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.ImmutableList;
@@ -50,10 +50,10 @@ import static com.google.common.collect.Lists.newLinkedList;
 /**
  * <p>A deterministic key chain is a {@link KeyChain} that uses the
  * <a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki">BIP 32 standard</a>, as implemented by
- * {@link org.colxj.crypto.DeterministicHierarchy}, to derive all the keys in the keychain from a master seed.
+ * {@link org.lightpaycashj.crypto.DeterministicHierarchy}, to derive all the keys in the keychain from a master seed.
  * This type of wallet is extremely convenient and flexible. Although backing up full wallet files is always a good
  * idea, to recover money only the root seed needs to be preserved and that is a number small enough that it can be
- * written down on paper or, when represented using a BIP 39 {@link org.colxj.crypto.MnemonicCode},
+ * written down on paper or, when represented using a BIP 39 {@link org.lightpaycashj.crypto.MnemonicCode},
  * dictated over the phone (possibly even memorized).</p>
  *
  * <p>Deterministic key chains have other advantages: parts of the key tree can be selectively revealed to allow
@@ -63,14 +63,14 @@ import static com.google.common.collect.Lists.newLinkedList;
  * A watching wallet is not instantiated using the public part of the master key as you may imagine. Instead, you
  * need to take the account key (first child of the master key) and provide the public part of that to the watching
  * wallet instead. You can do this by calling {@link #getWatchingKey()} and then serializing it with
- * {@link org.colxj.crypto.DeterministicKey#serializePubB58(org.colxj.core.NetworkParameters)}. The resulting "xpub..." string encodes
+ * {@link org.lightpaycashj.crypto.DeterministicKey#serializePubB58(org.lightpaycashj.core.NetworkParameters)}. The resulting "xpub..." string encodes
  * sufficient information about the account key to create a watching chain via
- * {@link org.colxj.crypto.DeterministicKey#deserializeB58(org.colxj.crypto.DeterministicKey, String, org.colxj.core.NetworkParameters)}
+ * {@link org.lightpaycashj.crypto.DeterministicKey#deserializeB58(org.lightpaycashj.crypto.DeterministicKey, String, org.lightpaycashj.core.NetworkParameters)}
  * (with null as the first parameter) and then
- * {@link DeterministicKeyChain#DeterministicKeyChain(org.colxj.crypto.DeterministicKey,KeyChainType keyChaintype)}.</p>
+ * {@link DeterministicKeyChain#DeterministicKeyChain(org.lightpaycashj.crypto.DeterministicKey,KeyChainType keyChaintype)}.</p>
  *
- * <p>This class builds on {@link org.colxj.crypto.DeterministicHierarchy} and
- * {@link org.colxj.crypto.DeterministicKey} by adding support for serialization to and from protobufs,
+ * <p>This class builds on {@link org.lightpaycashj.crypto.DeterministicHierarchy} and
+ * {@link org.lightpaycashj.crypto.DeterministicKey} by adding support for serialization to and from protobufs,
  * and encryption of parts of the key tree. Internally it arranges itself as per the BIP 32 spec, with the seed being
  * used to derive a master key, which is then used to derive an account key, the account key is used to derive two
  * child keys called the <i>internal</i> and <i>external</i> parent keys (for change and handing out addresses respectively)
@@ -570,7 +570,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
                 ImmutableList<ChildNumber> path = HDUtils.append(parentKey.getPath(), new ChildNumber(index - numberOfKeys + i, false));
                 DeterministicKey k = hierarchy.get(path, false, false);
                 // Just a last minute sanity check before we hand the key out to the app for usage. This isn't inspired
-                // by any real problem reports from colxj users, but I've heard of cases via the grapevine of
+                // by any real problem reports from lightpaycashj users, but I've heard of cases via the grapevine of
                 // places that lost money due to bitflips causing addresses to not match keys. Of course in an
                 // environment with flaky RAM there's no real way to always win: bitflips could be introduced at any
                 // other layer. But as we're potentially retrieving from long term storage here, check anyway.
@@ -698,7 +698,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
      * <p>An alias for <code>getKeyByPath(getAccountPath())</code>.</p>
      *
      * <p>Use this when you would like to create a watching key chain that follows this one, but can't spend money from it.
-     * The returned key can be serialized and then passed into {@link #watch(org.colxj.crypto.DeterministicKey)}
+     * The returned key can be serialized and then passed into {@link #watch(org.lightpaycashj.crypto.DeterministicKey)}
      * on another system to watch the hierarchy.</p>
      *
      * <p>Note that the returned key is not pubkey only unless this key chain already is: the returned key can still
@@ -1395,7 +1395,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
     /**
      * Whether the keychain is married.  A keychain is married when it vends P2SH addresses
      * from multiple keychains in a multisig relationship.
-     * @see org.colxj.wallet.MarriedKeyChain
+     * @see org.lightpaycashj.wallet.MarriedKeyChain
      */
     public boolean isMarried() {
         return false;

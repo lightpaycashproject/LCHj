@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.net.AbstractTimeoutHandler;
-import org.colxj.net.MessageWriteTarget;
-import org.colxj.net.StreamConnection;
-import org.colxj.utils.Threading;
+import org.lightpaycashj.net.AbstractTimeoutHandler;
+import org.lightpaycashj.net.MessageWriteTarget;
+import org.lightpaycashj.net.StreamConnection;
+import org.lightpaycashj.utils.Threading;
 import com.google.common.annotations.VisibleForTesting;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,7 +37,7 @@ import static com.google.common.base.Preconditions.*;
 
 /**
  * Handles high-level message (de)serialization for peers, acting as the bridge between the
- * {@link org.colxj.net} classes and {@link Peer}.
+ * {@link org.lightpaycashj.net} classes and {@link Peer}.
  */
 public abstract class PeerSocketHandler extends AbstractTimeoutHandler implements StreamConnection {
     private static final Logger log = LoggerFactory.getLogger(PeerSocketHandler.class);
@@ -210,8 +210,8 @@ public abstract class PeerSocketHandler extends AbstractTimeoutHandler implement
 
     /**
      * Sets the {@link MessageWriteTarget} used to write messages to the peer. This should almost never be called, it is
-     * called automatically by {@link org.colxj.net.NioClient} or
-     * {@link org.colxj.net.NioClientManager} once the socket finishes initialization.
+     * called automatically by {@link org.lightpaycashj.net.NioClient} or
+     * {@link org.lightpaycashj.net.NioClientManager} once the socket finishes initialization.
      */
     @Override
     public void setWriteTarget(MessageWriteTarget writeTarget) {

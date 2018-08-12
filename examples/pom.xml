@@ -19,21 +19,21 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.colxj</groupId>
-        <artifactId>colxj-parent</artifactId>
+        <groupId>org.lightpaycashj</groupId>
+        <artifactId>lightpaycashj-parent</artifactId>
         <version>1.03</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>colxj-examples</artifactId>
+    <artifactId>lightpaycashj-examples</artifactId>
 
-    <name>colxj Examples</name>
-    <description>A collection of examples using the colxj library</description>
+    <name>lightpaycashj Examples</name>
+    <description>A collection of examples using the lightpaycashj library</description>
 
     <dependencies>
         <dependency>
-            <groupId>org.colxj</groupId>
-            <artifactId>colxj-core</artifactId>
+            <groupId>org.lightpaycashj</groupId>
+            <artifactId>lightpaycashj-core</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>

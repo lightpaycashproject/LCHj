@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.core.ECKey;
-import org.colxj.script.Script;
+import org.lightpaycashj.core.ECKey;
+import org.lightpaycashj.script.Script;
 
 import java.util.ArrayList;
 import java.util.Collections;

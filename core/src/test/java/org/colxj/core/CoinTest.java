@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import static org.colxj.core.Coin.*;
-import static org.colxj.core.NetworkParameters.MAX_MONEY;
+import static org.lightpaycashj.core.Coin.*;
+import static org.lightpaycashj.core.NetworkParameters.MAX_MONEY;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

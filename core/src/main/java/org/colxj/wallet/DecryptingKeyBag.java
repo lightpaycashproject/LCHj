@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet;
+package org.lightpaycashj.wallet;
 
-import org.colxj.core.ECKey;
+import org.lightpaycashj.core.ECKey;
 import org.spongycastle.crypto.params.KeyParameter;
 
 import javax.annotation.Nullable;
@@ -28,7 +28,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
  * A DecryptingKeyBag filters a pre-existing key bag, decrypting keys as they are requested using the provided
- * AES key. If the keys are encrypted and no AES key provided, {@link org.colxj.core.ECKey.KeyIsEncryptedException}
+ * AES key. If the keys are encrypted and no AES key provided, {@link org.lightpaycashj.core.ECKey.KeyIsEncryptedException}
  * will be thrown.
  */
 public class DecryptingKeyBag implements KeyBag {

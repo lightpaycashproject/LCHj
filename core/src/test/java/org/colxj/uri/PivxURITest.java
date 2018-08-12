@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.colxj.uri;
+package org.lightpaycashj.uri;
 
-import org.colxj.core.Address;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.TestNet3Params;
+import org.lightpaycashj.core.Address;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.TestNet3Params;
 import com.google.common.collect.ImmutableList;
 import org.junit.Test;
-import org.colxj.core.CoinDefinition;
+import org.lightpaycashj.core.CoinDefinition;
 
-import static org.colxj.core.Coin.*;
-import org.colxj.core.NetworkParameters;
+import static org.lightpaycashj.core.Coin.*;
+import org.lightpaycashj.core.NetworkParameters;
 import static org.junit.Assert.*;
 
 public class PivxURITest {

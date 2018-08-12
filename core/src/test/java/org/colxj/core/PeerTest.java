@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import com.google.common.collect.*;
-import org.colxj.core.listeners.*;
-import org.colxj.params.TestNet3Params;
-import org.colxj.testing.FakeTxBuilder;
-import org.colxj.testing.InboundMessageQueuer;
-import org.colxj.testing.TestWithNetworkConnections;
-import org.colxj.utils.Threading;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.lightpaycashj.core.listeners.*;
+import org.lightpaycashj.params.TestNet3Params;
+import org.lightpaycashj.testing.FakeTxBuilder;
+import org.lightpaycashj.testing.InboundMessageQueuer;
+import org.lightpaycashj.testing.TestWithNetworkConnections;
+import org.lightpaycashj.utils.Threading;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
@@ -52,8 +52,8 @@ import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.colxj.core.Coin.*;
-import static org.colxj.testing.FakeTxBuilder.*;
+import static org.lightpaycashj.core.Coin.*;
+import static org.lightpaycashj.testing.FakeTxBuilder.*;
 import static org.junit.Assert.*;
 
 @RunWith(value = Parameterized.class)

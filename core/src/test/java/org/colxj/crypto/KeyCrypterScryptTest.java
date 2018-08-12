@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
-import org.colxj.core.Utils;
-import org.colxj.utils.BriefLogFormatter;
+import org.lightpaycashj.core.Utils;
+import org.lightpaycashj.utils.BriefLogFormatter;
 import com.google.protobuf.ByteString;
 
-import org.colxj.wallet.Protos;
-import org.colxj.wallet.Protos.ScryptParameters;
+import org.lightpaycashj.wallet.Protos;
+import org.lightpaycashj.wallet.Protos.ScryptParameters;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;

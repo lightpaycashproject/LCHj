@@ -1,7 +1,7 @@
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.utils.ListenerRegistration;
-import org.colxj.utils.Threading;
+import org.lightpaycashj.utils.ListenerRegistration;
+import org.lightpaycashj.utils.Threading;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

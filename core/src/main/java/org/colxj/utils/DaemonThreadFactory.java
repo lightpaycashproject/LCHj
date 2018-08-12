@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

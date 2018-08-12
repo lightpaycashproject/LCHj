@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
-import org.colxj.core.ECKey;
-import org.colxj.crypto.BIP38PrivateKey.BadPassphraseException;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.TestNet3Params;
+import org.lightpaycashj.core.ECKey;
+import org.lightpaycashj.crypto.BIP38PrivateKey.BadPassphraseException;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.TestNet3Params;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;

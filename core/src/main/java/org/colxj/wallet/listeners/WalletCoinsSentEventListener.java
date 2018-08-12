@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.colxj.wallet.listeners;
+package org.lightpaycashj.wallet.listeners;
 
-import org.colxj.core.Coin;
-import org.colxj.core.Transaction;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.Coin;
+import org.lightpaycashj.core.Transaction;
+import org.lightpaycashj.wallet.Wallet;
 
 /**
  * <p>Implementors are called when the contents of the wallet changes, for instance due to receiving/sending money

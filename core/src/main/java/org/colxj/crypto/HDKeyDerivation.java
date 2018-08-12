@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
 import com.google.common.collect.*;
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 import org.spongycastle.math.ec.*;
 
 import java.math.*;

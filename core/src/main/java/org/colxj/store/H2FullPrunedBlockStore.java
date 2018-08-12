@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.colxj.store;
+package org.lightpaycashj.store;
 
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 
 import java.sql.*;
 import java.util.ArrayList;

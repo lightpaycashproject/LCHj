@@ -1,6 +1,6 @@
 package org.darkcoinj;
 
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 
 import java.util.ArrayList;
 

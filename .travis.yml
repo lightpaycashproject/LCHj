@@ -17,5 +17,5 @@ after_success:
 
 notifications:
   irc:
-    channels: "irc.freenode.net#colxj"
+    channels: "irc.freenode.net#lightpaycashj"
     skip_join: true

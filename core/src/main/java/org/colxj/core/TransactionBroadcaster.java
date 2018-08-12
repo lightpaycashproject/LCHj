@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 /**
  * A general interface which declares the ability to broadcast transactions. This is implemented
- * by {@link org.colxj.core.PeerGroup}.
+ * by {@link org.lightpaycashj.core.PeerGroup}.
  */
 public interface TransactionBroadcaster {
     /** Broadcast the given transaction on the network */

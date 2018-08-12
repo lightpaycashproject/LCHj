@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
-import org.colxj.core.listeners.PeerConnectedEventListener;
-import org.colxj.core.listeners.PeerDisconnectedEventListener;
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.Peer;
-import org.colxj.core.PeerGroup;
-import org.colxj.net.discovery.DnsDiscovery;
-import org.colxj.params.MainNetParams;
-import org.colxj.utils.BriefLogFormatter;
+import org.lightpaycashj.core.listeners.PeerConnectedEventListener;
+import org.lightpaycashj.core.listeners.PeerDisconnectedEventListener;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.Peer;
+import org.lightpaycashj.core.PeerGroup;
+import org.lightpaycashj.net.discovery.DnsDiscovery;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.utils.BriefLogFormatter;
 import com.google.common.collect.Lists;
 
 import javax.swing.*;

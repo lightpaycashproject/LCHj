@@ -12,10 +12,10 @@
  * limitations under the License.
  */
 
-package org.colxj.testing;
+package org.lightpaycashj.testing;
 
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.WalletExtension;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.WalletExtension;
 
 import java.util.Arrays;
 

@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.colxj.params;
+package org.lightpaycashj.params;
 
-import org.colxj.core.*;
+import org.lightpaycashj.core.*;
 
 import java.math.BigInteger;
 
 /**
- * Network parameters used by the colxj unit tests (and potentially your own). This lets you solve a block using
- * {@link org.colxj.core.Block#solve()} by setting difficulty to the easiest possible.
+ * Network parameters used by the lightpaycashj unit tests (and potentially your own). This lets you solve a block using
+ * {@link org.lightpaycashj.core.Block#solve()} by setting difficulty to the easiest possible.
  */
 public class UnitTestParams extends AbstractBitcoinNetParams {
     public static final int UNITNET_MAJORITY_WINDOW = 8;

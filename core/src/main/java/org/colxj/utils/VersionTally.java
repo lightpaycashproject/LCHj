@@ -14,22 +14,22 @@
  * limitations under the License.
  */
 
-package org.colxj.utils;
+package org.lightpaycashj.utils;
 
 import java.util.Stack;
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.StoredBlock;
-import org.colxj.store.BlockStore;
-import org.colxj.store.BlockStoreException;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.StoredBlock;
+import org.lightpaycashj.store.BlockStore;
+import org.lightpaycashj.store.BlockStoreException;
 
 /**
  * Caching counter for the block versions within a moving window. This class
  * is NOT thread safe (as if two threads are trying to use it concurrently,
  * there's risk of getting versions out of sequence).
  *
- * @see org.colxj.core.NetworkParameters#getMajorityWindow()
- * @see org.colxj.core.NetworkParameters#getMajorityEnforceBlockUpgrade()
- * @see org.colxj.core.NetworkParameters#getMajorityRejectBlockOutdated()
+ * @see org.lightpaycashj.core.NetworkParameters#getMajorityWindow()
+ * @see org.lightpaycashj.core.NetworkParameters#getMajorityEnforceBlockUpgrade()
+ * @see org.lightpaycashj.core.NetworkParameters#getMajorityRejectBlockOutdated()
  */
 public class VersionTally {
     /**

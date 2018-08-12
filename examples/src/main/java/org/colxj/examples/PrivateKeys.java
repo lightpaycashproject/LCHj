@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
-import org.colxj.core.*;
-import org.colxj.params.MainNetParams;
-import org.colxj.store.MemoryBlockStore;
-import org.colxj.wallet.Wallet;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.store.MemoryBlockStore;
+import org.lightpaycashj.wallet.Wallet;
 
 import java.math.BigInteger;
 import java.net.InetAddress;

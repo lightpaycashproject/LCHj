@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.colxj.net;
+package org.lightpaycashj.net;
 
-import org.colxj.core.Utils;
-import org.colxj.utils.Threading;
+import org.lightpaycashj.core.Utils;
+import org.lightpaycashj.utils.Threading;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.MessageLite;

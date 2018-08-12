@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
-import org.colxj.core.TransactionConfidence.*;
-import org.colxj.crypto.TransactionSignature;
-import org.colxj.params.*;
-import org.colxj.script.*;
-import org.colxj.testing.*;
+import org.lightpaycashj.core.TransactionConfidence.*;
+import org.lightpaycashj.crypto.TransactionSignature;
+import org.lightpaycashj.params.*;
+import org.lightpaycashj.script.*;
+import org.lightpaycashj.testing.*;
 import org.easymock.*;
 import org.junit.*;
 
 import java.math.BigInteger;
 import java.util.*;
-import static org.colxj.core.Utils.HEX;
+import static org.lightpaycashj.core.Utils.HEX;
 
 import static org.easymock.EasyMock.*;
 import static org.junit.Assert.*;

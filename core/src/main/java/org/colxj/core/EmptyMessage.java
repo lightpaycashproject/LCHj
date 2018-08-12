@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
 /**
  * <p>Parent class for header only messages that don't have a payload.
- * Currently this includes getaddr, verack and special colxj class UnknownMessage.</p>
+ * Currently this includes getaddr, verack and special lightpaycashj class UnknownMessage.</p>
  * 
  * <p>Instances of this class are not safe for use by multiple threads.</p>
  */

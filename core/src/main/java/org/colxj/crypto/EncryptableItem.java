@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.colxj.crypto;
+package org.lightpaycashj.crypto;
 
-import org.colxj.wallet.Protos;
+import org.lightpaycashj.wallet.Protos;
 
 import javax.annotation.Nullable;
 
 /**
  * Provides a uniform way to access something that can be optionally encrypted with a
- * {@link org.colxj.crypto.KeyCrypter}, yielding an {@link org.colxj.crypto.EncryptedData}, and
+ * {@link org.lightpaycashj.crypto.KeyCrypter}, yielding an {@link org.lightpaycashj.crypto.EncryptedData}, and
  * which can have a creation time associated with it.
  */
 public interface EncryptableItem {

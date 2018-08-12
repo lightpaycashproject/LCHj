@@ -15,30 +15,30 @@
  * limitations under the License.
  */
 
-package org.colxj.store;
+package org.lightpaycashj.store;
 
-import org.colxj.core.*;
-import org.colxj.core.Transaction.Purpose;
-import org.colxj.core.TransactionConfidence.ConfidenceType;
-import org.colxj.crypto.DeterministicKey;
-import org.colxj.params.MainNetParams;
-import org.colxj.params.UnitTestParams;
-import org.colxj.script.ScriptBuilder;
-import org.colxj.testing.FakeTxBuilder;
-import org.colxj.testing.FooWalletExtension;
-import org.colxj.utils.BriefLogFormatter;
-import org.colxj.utils.Threading;
-import org.colxj.wallet.DeterministicKeyChain;
-import org.colxj.wallet.KeyChain;
+import org.lightpaycashj.core.*;
+import org.lightpaycashj.core.Transaction.Purpose;
+import org.lightpaycashj.core.TransactionConfidence.ConfidenceType;
+import org.lightpaycashj.crypto.DeterministicKey;
+import org.lightpaycashj.params.MainNetParams;
+import org.lightpaycashj.params.UnitTestParams;
+import org.lightpaycashj.script.ScriptBuilder;
+import org.lightpaycashj.testing.FakeTxBuilder;
+import org.lightpaycashj.testing.FooWalletExtension;
+import org.lightpaycashj.utils.BriefLogFormatter;
+import org.lightpaycashj.utils.Threading;
+import org.lightpaycashj.wallet.DeterministicKeyChain;
+import org.lightpaycashj.wallet.KeyChain;
 import com.google.protobuf.ByteString;
 
-import org.colxj.wallet.MarriedKeyChain;
-import org.colxj.wallet.Protos;
-import org.colxj.wallet.UnreadableWalletException;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.WalletExtension;
-import org.colxj.wallet.WalletProtobufSerializer;
-import org.colxj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.lightpaycashj.wallet.MarriedKeyChain;
+import org.lightpaycashj.wallet.Protos;
+import org.lightpaycashj.wallet.UnreadableWalletException;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.WalletExtension;
+import org.lightpaycashj.wallet.WalletProtobufSerializer;
+import org.lightpaycashj.wallet.listeners.WalletCoinsReceivedEventListener;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -52,8 +52,8 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
 
-import static org.colxj.core.Coin.*;
-import static org.colxj.testing.FakeTxBuilder.createFakeTx;
+import static org.lightpaycashj.core.Coin.*;
+import static org.lightpaycashj.testing.FakeTxBuilder.createFakeTx;
 import static org.junit.Assert.*;
 import static com.google.common.base.Preconditions.checkNotNull;
 

@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.colxj.jni;
+package org.lightpaycashj.jni;
 
-import org.colxj.core.Coin;
-import org.colxj.core.ECKey;
-import org.colxj.core.Transaction;
-import org.colxj.script.Script;
-import org.colxj.wallet.Wallet;
-import org.colxj.wallet.listeners.WalletEventListener;
+import org.lightpaycashj.core.Coin;
+import org.lightpaycashj.core.ECKey;
+import org.lightpaycashj.core.Transaction;
+import org.lightpaycashj.script.Script;
+import org.lightpaycashj.wallet.Wallet;
+import org.lightpaycashj.wallet.listeners.WalletEventListener;
 
 import java.util.List;
 

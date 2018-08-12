@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.examples;
+package org.lightpaycashj.examples;
 
 import static org.fusesource.leveldbjni.JniDBFactory.*;
 

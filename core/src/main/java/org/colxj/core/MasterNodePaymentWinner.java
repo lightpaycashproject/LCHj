@@ -1,11 +1,11 @@
-package org.colxj.core;
+package org.lightpaycashj.core;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.Serializable;
 
-import static org.colxj.core.Utils.int64ToByteStreamLE;
-import static org.colxj.core.Utils.uint32ToByteStreamLE;
+import static org.lightpaycashj.core.Utils.int64ToByteStreamLE;
+import static org.lightpaycashj.core.Utils.uint32ToByteStreamLE;
 
 /**
  * Created by Eric on 2/8/2015.

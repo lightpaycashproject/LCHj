@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.colxj.store;
+package org.lightpaycashj.store;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -28,19 +28,19 @@ import java.util.concurrent.TimeUnit;
 import java.io.*;
 import java.nio.ByteBuffer;
 
-import org.colxj.core.Address;
-import org.colxj.core.AddressFormatException;
-import org.colxj.core.NetworkParameters;
-import org.colxj.core.ScriptException;
-import org.colxj.core.Sha256Hash;
-import org.colxj.core.StoredBlock;
-import org.colxj.core.StoredUndoableBlock;
-import org.colxj.core.Transaction;
-import org.colxj.core.TransactionOutputChanges;
-import org.colxj.core.UTXO;
-import org.colxj.core.UTXOProviderException;
-import org.colxj.core.VerificationException;
-import org.colxj.script.Script;
+import org.lightpaycashj.core.Address;
+import org.lightpaycashj.core.AddressFormatException;
+import org.lightpaycashj.core.NetworkParameters;
+import org.lightpaycashj.core.ScriptException;
+import org.lightpaycashj.core.Sha256Hash;
+import org.lightpaycashj.core.StoredBlock;
+import org.lightpaycashj.core.StoredUndoableBlock;
+import org.lightpaycashj.core.Transaction;
+import org.lightpaycashj.core.TransactionOutputChanges;
+import org.lightpaycashj.core.UTXO;
+import org.lightpaycashj.core.UTXOProviderException;
+import org.lightpaycashj.core.VerificationException;
+import org.lightpaycashj.script.Script;
 import org.iq80.leveldb.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
